@@ -12,7 +12,7 @@ module upcount15
         if (sreset) count <= 0;
         else begin
             if (i_enable) begin
-                if (o_last) count <= 0;
+                if (o_last) count<=0;
                 else count <= count + 1;
             end
         end
@@ -20,5 +20,6 @@ module upcount15
 
     assign o_val = count;
     assign o_last = (count == 4'b1111);
+
 
 endmodule
