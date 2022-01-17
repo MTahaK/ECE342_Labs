@@ -4,8 +4,7 @@ module upcount15
     input sreset, // sync reset
     output [3:0] o_val,
     input i_enable,
-    output o_last,
-
+    output o_last
 );
     logic [3:0] count;
     always_ff @(posedge clk) begin

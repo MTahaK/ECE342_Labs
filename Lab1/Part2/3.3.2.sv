@@ -13,10 +13,10 @@ upcount15 DUT(.clk(clk), .sreset(sreset), .o_val(dut_val), .i_enable(dut_enable)
 
 initial begin
 	dut_enable = 1'b0;
-	reset = 1'b1;
+	sreset = 1'b1;
 	
 	@(posedge clk);
-	reset = 1'b0;
+	sreset = 1'b0;
 	
 	@(posedge clk);
 	dut_enable = 1'b1;

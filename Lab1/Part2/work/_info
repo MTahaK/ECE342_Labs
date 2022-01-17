@@ -1,0 +1,79 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/mtaha/Desktop/Uni/Year 3 (2021-2022)/ECE342_Labs/Lab1/Part2
+vupcount
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1642381588
+!i10b 1
+!s100 eM8d2Tg=O486h7nb@:g<;2
+IMP7g[B<[:F5aN:2CPUGd81
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 _3_4_sv_unit
+S1
+R0
+w1642380876
+83_4.sv
+F3_4.sv
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1642381588.000000
+!s107 3_5.sv|3_4.sv|3_3_2.sv|3_2.sv|
+!s90 -reportprogress|300|3_2.sv|3_3_2.sv|3_4.sv|3_5.sv|
+!i113 1
+Z4 tCvgOpt 0
+vupcount15
+R1
+!s110 1642381968
+!i10b 1
+!s100 FEONC:fhTkhUhPOJ4eQYZ0
+I;368^O][8g`22f;W36AKg1
+R2
+!s105 _3_2_sv_unit
+S1
+R0
+w1642381344
+83.2.sv
+F3.2.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1642381968.000000
+!s107 3.2.sv|
+!s90 -reportprogress|300|3.2.sv|
+!i113 1
+R4
+vupcount15_tb
+R1
+!s110 1642381743
+!i10b 1
+!s100 Y>Zd=W8Y?a12SPUR[Chhb0
+IIoc:654B>cY;8QaV;CFe`1
+R2
+!s105 _3_3_2_sv_unit
+S1
+R0
+w1642381586
+83_3_2.sv
+F3_3_2.sv
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1642381743.000000
+!s107 3_3_2.sv|3_2.sv|
+!s90 -reportprogress|300|3_2.sv|3_3_2.sv|
+!i113 1
+R4
