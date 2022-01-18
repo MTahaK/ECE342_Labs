@@ -8,74 +8,122 @@ z2
 !i10f 100
 cModel Technology
 dW:/ECE342/Lab1/part1
-vFA1bit
+X_2_3_sv_unit
 Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z1 !s110 1642286808
+Z1 !s110 1642484119
+!i10b 1
+!s100 c23z8`Eg^fnFAfCRFb>UE0
+IaICMD1@kloLfJlQ:nZON02
+VaICMD1@kloLfJlQ:nZON02
+!i103 1
+S1
+Z2 dC:/Users/chunj/Documents/GitHub/ECE342_Labs/Lab1/Part1
+Z3 w1642484094
+Z4 82.3.sv
+Z5 F2.3.sv
+L0 21
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1642484119.000000
+Z8 !s107 2.3.sv|
+Z9 !s90 -reportprogress|300|2.3.sv|
+!i113 1
+Z10 tCvgOpt 0
+n@_2_3_sv_unit
+vFA1bit
+R0
+Z11 !s110 1642483773
 !i10b 1
 !s100 PlFIBY5>hTn3noi?JC<Td3
 IYzCjVVC>AB4UPO6Q1Sm9V0
-Z2 VDg1SIo80bB@j0V0VzS_@n1
-Z3 !s105 rca_sv_unit
+Z12 VDg1SIo80bB@j0V0VzS_@n1
+Z13 !s105 rca_sv_unit
 S1
-Z4 dW:/ECE342/Lab1/Part1
-Z5 w1642246683
-Z6 8rca.sv
-Z7 Frca.sv
+R2
+Z14 w1642289471
+Z15 8rca.sv
+Z16 Frca.sv
 L0 1
-Z8 OV;L;10.5b;63
+R6
 r1
 !s85 0
 31
-Z9 !s108 1642286807.000000
-Z10 !s107 rca.sv|
-Z11 !s90 -reportprogress|300|rca.sv|
+Z17 !s108 1642483773.000000
+Z18 !s107 rca.sv|
+Z19 !s90 -reportprogress|300|rca.sv|
 !i113 1
-Z12 tCvgOpt 0
+R10
 n@f@a1bit
 vRCAgen
 R0
-R1
+R11
 !i10b 1
 !s100 YVahfng5:m1c0@3LMzjKA2
 I8MzGjAD]DBKaYBicL`z_>0
-R2
-R3
+R12
+R13
 S1
-R4
-R5
-R6
-R7
+R2
+R14
+R15
+R16
 L0 8
-R8
+R6
 r1
 !s85 0
 31
-R9
-R10
-R11
+R17
+R18
+R19
 !i113 1
-R12
+R10
 n@r@c@agen
+vRCAmanual
+R0
+R1
+!i10b 1
+!s100 d[ilIIYVDVUSN]6]XzG[82
+I<Zm78KS3P29E;B;?>f0C^2
+R12
+!s105 _2_3_sv_unit
+S1
+R2
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@r@c@amanual
 vtb
 R0
-!s110 1642286856
+!s110 1642484123
 !i10b 1
-!s100 RkW=fgZ?>eWdKKXcbOb:P2
-IoM]9^N46UeX_TTg_XfL4=3
-R2
+!s100 z<k5j]4dcBP02X;XB254n2
+IDCdLSj^:572lgB`CY;fzh1
+R12
 !s105 rca_tb_sv_unit
 S1
-R4
-w1642286846
+R2
+w1642484097
 8rca_tb.sv
 Frca_tb.sv
 L0 2
-R8
+R6
 r1
 !s85 0
 31
-!s108 1642286856.000000
+!s108 1642484123.000000
 !s107 rca_tb.sv|
 !s90 -reportprogress|300|rca_tb.sv|
 !i113 1
-R12
+R10
