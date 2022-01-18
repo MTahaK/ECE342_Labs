@@ -10,7 +10,7 @@ cModel Technology
 Z0 dC:/Users/mtaha/Desktop/Uni/Year 3 (2021-2022)/ECE342_Labs/Lab1/Part2
 vupcount
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-!s110 1642530417
+!s110 1642533058
 !i10b 1
 !s100 eM8d2Tg=O486h7nb@:g<;2
 In[h==kFAj:c7V]J]dhZWQ1
@@ -26,7 +26,7 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-!s108 1642530417.000000
+!s108 1642533058.000000
 !s107 3.4.sv|
 !s90 -reportprogress|300|3.4.sv|
 !i113 1
@@ -79,15 +79,15 @@ R9
 R5
 vupcount_tb
 R1
-!s110 1642530420
+!s110 1642533062
 !i10b 1
-!s100 4HQkoFG5Nd:D:fT9nlO@G1
-IYcaf_^nC>Ni`YX>7[Z1Kd0
+!s100 nckAfVjTgU:>9U<E<lzW32
+IOFfGgZ>UEQlP_oSNzhYMz3
 R2
 !s105 _3_5_sv_unit
 S1
 R3
-w1642481171
+w1642531731
 83.5.sv
 F3.5.sv
 L0 2
@@ -95,7 +95,7 @@ R4
 r1
 !s85 0
 31
-!s108 1642530420.000000
+!s108 1642533062.000000
 !s107 3.5.sv|
 !s90 -reportprogress|300|3.5.sv|
 !i113 1
