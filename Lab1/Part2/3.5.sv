@@ -17,7 +17,7 @@ logic count112_last;
 logic [3:0] count12_val;
 logic [6:0] count112_val;
 
-upcount15 DUT(.clk(clk), .sreset(sreset), .o_val(dut_val), .i_enable(dut_enable), .o_last(dut_last));
+upcount # (.N(16)) count16(.clk(clk), .sreset(sreset), .o_val(dut_val), .i_enable(dut_enable), .o_last(dut_last));
 
 upcount # (.N(12)) count12
 (
@@ -52,9 +52,9 @@ initial begin
 		$stop();
 	end
 	
-end
-
-initial begin
+	@(posedge clk);
+	dut_enable = 1'b0;
+	
 	count12_enable = 1'b0;
 	sreset = 1'b1;
 	
@@ -70,9 +70,9 @@ initial begin
 		$stop();
 	end
 
-end
+	@(posedge clk);
+	count12_enable = 1'b0;
 
-initial begin
 	count112_enable = 1'b0;
 	sreset = 1'b1;
 	
@@ -87,6 +87,9 @@ initial begin
 		$display("Error! Computer asserted o_last, but o_val was %d, instead of 111.", dut_val);
 		$stop();
 	end
+
+	@(posedge clk);
+	count112_enable = 1'b0;
 	
 	@(posedge clk);
 	$stop();
