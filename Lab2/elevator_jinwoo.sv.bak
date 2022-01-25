@@ -87,13 +87,8 @@ module controlpath (
 		begin
 		if (i_buttons == 2'b00)
 			begin
-				if (o_dp_down)
-					o_dp_down = 1'b0;
-				if (o_current_floor == 2'b01)
-					begin
-						nextstate = S_G;
-						o_dp_down = 1'b1;
-					end
+				nextstate = S_G;
+				o_dp_down = 1'b1;
 			end
 		else if (i_buttons == 2'b01)
 			begin
@@ -103,13 +98,8 @@ module controlpath (
 			end
 		else if ((i_buttons == 2'b10) || (i_buttons  == 2'b11))
 			begin
-				if (o_dp_up)
-					o_dp_up = 1'b0;
-				if (o_current_floor == 2'b01)
-					begin
-						nextstate = S_2;
-						o_dp_up = 1'b1;	
-					end
+				nextstate = S_2;
+				o_dp_up = 1'b1;	
 			end
 		if (i_done)
 			o_current_floor = 2'b01;
@@ -119,13 +109,8 @@ module controlpath (
 		begin
 		if ((i_buttons == 2'b00) || (i_buttons == 2'b01))
 			begin
-				if (o_dp_down)
-					o_dp_down = 1'b0;
-				if (o_current_floor == 2'b10) 
-					begin
-						nextstate = S_1;
-						o_dp_down = 1'b1;
-					end
+				nextstate = S_1;
+				o_dp_down = 1'b1;
 			end
 		else if (i_buttons == 2'b10)
 			begin
@@ -135,13 +120,8 @@ module controlpath (
 			end
 		else if (i_buttons  == 2'b11)
 			begin
-				if (o_dp_up)
-					o_dp_up = 1'b0; 
-				if (o_current_floor == 2'b10)
-					begin
-						nextstate = S_3;
-						o_dp_up = 1'b1;
-					end	
+				nextstate = S_3;
+				o_dp_up = 1'b1;	
 			end
 		if (i_done)
 			o_current_floor = 2'b10;

@@ -51,8 +51,8 @@ module elevator_tb();
     @(posedge i_clock);
     
     move_floor(2'd0);  
+    move_floor(2'd1);
 	 move_floor(2'd3);
-	 move_floor(2'd1);
     // Add more test cases here. 
     
     $stop();
