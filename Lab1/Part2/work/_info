@@ -10,15 +10,15 @@ cModel Technology
 Z0 dC:/Users/mtaha/Desktop/Uni/Year 3 (2021-2022)/ECE342_Labs/Lab1/Part2
 vupcount
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1642531371
+!s110 1642530417
 !i10b 1
 !s100 eM8d2Tg=O486h7nb@:g<;2
 In[h==kFAj:c7V]J]dhZWQ1
-Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
 !s105 _3_4_sv_unit
 S1
-R0
-w1642380876
+Z3 dC:/Users/chunj/Documents/GitHub/ECE342_Labs/Lab1/Part2
+w1642327101
 83.4.sv
 F3.4.sv
 L0 1
@@ -26,18 +26,18 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1642531371.000000
-Z6 !s107 3.5.sv|3.4.sv|3.3.2.sv|3.2.sv|
-Z7 !s90 -reportprogress|300|3.2.sv|3.3.2.sv|3.4.sv|3.5.sv|
+!s108 1642530417.000000
+!s107 3.4.sv|
+!s90 -reportprogress|300|3.4.sv|
 !i113 1
-Z8 tCvgOpt 0
+Z5 tCvgOpt 0
 vupcount15
 R1
-R2
+Z6 !s110 1642384084
 !i10b 1
 !s100 FEONC:fhTkhUhPOJ4eQYZ0
 I;368^O][8g`22f;W36AKg1
-R3
+R2
 !s105 _3_2_sv_unit
 S1
 R0
@@ -49,18 +49,18 @@ R4
 r1
 !s85 0
 31
-R5
-R6
-R7
+Z7 !s108 1642384084.000000
+Z8 !s107 3.5.sv|3.4.sv|3.3.2.sv|3.2.sv|
+Z9 !s90 -reportprogress|300|3.2.sv|3.3.2.sv|3.4.sv|3.5.sv|
 !i113 1
-R8
+R5
 vupcount15_tb
 R1
-R2
+R6
 !i10b 1
 !s100 Y>Zd=W8Y?a12SPUR[Chhb0
 I1`9ZclNL]Nh??;27RBM3a2
-R3
+R2
 !s105 _3_3_2_sv_unit
 S1
 R0
@@ -72,22 +72,22 @@ R4
 r1
 !s85 0
 31
-R5
-R6
 R7
-!i113 1
 R8
+R9
+!i113 1
+R5
 vupcount_tb
 R1
-!s110 1642531374
+!s110 1642530420
 !i10b 1
-!s100 nckAfVjTgU:>9U<E<lzW32
-IOFfGgZ>UEQlP_oSNzhYMz3
-R3
+!s100 4HQkoFG5Nd:D:fT9nlO@G1
+IYcaf_^nC>Ni`YX>7[Z1Kd0
+R2
 !s105 _3_5_sv_unit
 S1
-R0
-w1642531361
+R3
+w1642481171
 83.5.sv
 F3.5.sv
 L0 2
@@ -95,8 +95,8 @@ R4
 r1
 !s85 0
 31
-!s108 1642531374.000000
+!s108 1642530420.000000
 !s107 3.5.sv|
 !s90 -reportprogress|300|3.5.sv|
 !i113 1
-R8
+R5

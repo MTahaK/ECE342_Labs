@@ -7,8 +7,6 @@ module RCAmanual
 	
 	logic [8:0] cin; // Internal signal for carry between FA modules
 	
-	assign sum[8] = cin[8];
-	
 	FA1bit fa0(.a(x[0]), .b(y[0]), .cin(1'b0), .s(sum[0]), .cout(cin[1])); // cin[0] = 1'b0; 
 	FA1bit fa1(.a(x[1]), .b(y[1]), .cin(cin[1]), .s(sum[1]), .cout(cin[2]));
 	FA1bit fa2(.a(x[2]), .b(y[2]), .cin(cin[2]), .s(sum[2]), .cout(cin[3]));
