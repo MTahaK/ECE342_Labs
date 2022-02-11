@@ -12,7 +12,7 @@ logic [47:0] mantissa;
 logic [22:0] mantissa_truncated;
 logic [1:0] mantissa_hidden;
 logic [22:0] mantissa_final;
-logic [8:0] exponent_final;
+logic [7:0] exponent_final;
 logic [22:0] mantissa_x;
 logic [22:0] mantissa_y;
 
