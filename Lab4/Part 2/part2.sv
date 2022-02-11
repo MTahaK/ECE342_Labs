@@ -18,7 +18,7 @@ module part2#(
 	logic [M:0] y_man;
 	logic [M:0] mantissa;
 	logic [2*M+1] man_prod;
-	logic [M+1] man_trunc
+	logic [M+1] man_trunc;
 	logic sign;
 	logic [E:0] prod_exp
 
@@ -43,6 +43,18 @@ module part2#(
 
 	always_comb begin
 		
+		// Continues here if no special cases apply
+		else begin
+			if(man_trunc[M+1] == 1'b1) begin
+				// Mantissa needs to be normalized
+				man_trunc = man_trunc >> 1; 
+				prod_exp = prod_exp + 1;	// Increase exponent to account for man shift
+			end
+			result = man_trunc;
+
+		
+		end
+
 	
 	end
 
