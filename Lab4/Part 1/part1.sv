@@ -11,7 +11,7 @@ module part1(
 	output logic [22:0] mantissa_truncated,
 	output logic [1:0] mantissa_hidden,
 	output logic [22:0] mantissa_final,
-	output logic [8:0] exponent_final,
+	output logic [7:0] exponent_final,
 	output logic [22:0] mantissa_x,
 	output logic [22:0] mantissa_y,
 	output logic zero, 
@@ -61,7 +61,7 @@ module part1(
 	//the same as 2.305 x 10^4.
 	
 	//logic [22:0] mantissa_final;
-	//logic [8:0] exponent_final; //also for the special cases check
+	//logic [7:0] exponent_final; //also for the special cases check
 
 	always_comb 
 		begin	
@@ -80,7 +80,6 @@ module part1(
 			
 			//Zero case
 			if (((mantissa_x == 0) && (exponent_x == 0)) || ((mantissa_y == 0) && (exponent_y == 0)) || ((exponent_with_127 == 127) && (mantissa_final == 0)))
-			//if ((exponent_with_127 == 127) & (mantissa_final == 0))
 				begin
 					exponent_final = 0;
 					mantissa_final = 0;
@@ -113,7 +112,7 @@ module part1(
 	
 	//6. As the 2 most significant bits of the mantissa are now normalized, they must be 01 and can therefore be ignored. The 1 is the hidden one in the final number.
 	
-	assign result = {sign, exponent_final [7:0], mantissa_final};
+	assign result = {sign, exponent_final, mantissa_final};
 	
 endmodule
 	
