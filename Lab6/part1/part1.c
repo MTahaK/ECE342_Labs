@@ -138,9 +138,13 @@ int main(int argc, char *argv[]){
 	int min_m = 0;
 	float min_err = FLT_MAX;
 	for(int i = 0; i < 4; i++){
+
+
 		SET_Q_FORMAT(formats[i].m, 31-formats[i].m);
 		EMA_FILTER(datasets[2], emafi);
 		EMA_FLOAT(datasets[2], emafl);
+
+		
 		if(argc == 2 && !strcmp("full",argv[1])){
 			printf("\n\nM = %d, Dataset: [2]\n", formats[i].m, i);
 		}
@@ -167,9 +171,13 @@ int main(int argc, char *argv[]){
 	min_m = 0;
 	min_err = FLT_MAX;
 	for(int i = 0; i < 4; i++){
+
+
 		SET_Q_FORMAT(formats[i].m, 31-formats[i].m);
 		EMA_FILTER(datasets[3], emafi);
 		EMA_FLOAT(datasets[3], emafl);
+
+
 		if(argc == 2 && !strcmp("full",argv[1])){
 			printf("\n\nM = %d, Dataset: [3]\n", formats[i].m, i);
 		}
