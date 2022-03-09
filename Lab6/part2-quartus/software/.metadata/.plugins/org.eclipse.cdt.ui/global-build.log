@@ -1,0 +1,37 @@
+19:03:51 **** Build of configuration Nios II for project fixed_point ****
+make all 
+Info: Building ../fixed_point_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fixed_point_bsp/
+[BSP build complete]
+[fixed_point build complete]
+19:03:52 **** Build of configuration Nios II for project fixed_point_bsp ****
+make all 
+[BSP build complete]
+19:05:17 **** Incremental Build of configuration Nios II for project fixed_point ****
+make all 
+Info: Building ../fixed_point_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fixed_point_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../fixed_point_bsp//newlib/nios2-elf/include -I../fixed_point_bsp//HAL/inc -I../fixed_point_bsp/ -I../fixed_point_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:34:15: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  volatile int result;
+               ^
+Info: Linking fixed_point.elf
+nios2-elf-g++  -T'../fixed_point_bsp//linker.x' -msys-crt0='../fixed_point_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../fixed_point_bsp/ -L../fixed_point_bsp//newlib/nios2-elf/lib   -Wl,-Map=fixed_point.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o fixed_point.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert fixed_point.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2" --sopcinfo C:/Users/chunj/Downloads/lab6/part2/software/fixed_point_bsp/../../nios_system.sopcinfo
+Info: (fixed_point.elf) 69 KBytes program size (code + initialized data).
+Info:                   180 KBytes free for stack + heap.
+Info: Creating fixed_point.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source fixed_point.elf >fixed_point.objdump
+[fixed_point build complete]
+19:05:20 **** Incremental Build of configuration Nios II for project fixed_point_bsp ****
+make all 
+[BSP build complete]
+19:08:50 **** Incremental Build of configuration Nios II for project fixed_point ****
+make all 
+Info: Building ../fixed_point_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fixed_point_bsp/
+[BSP build complete]
+[fixed_point build complete]
