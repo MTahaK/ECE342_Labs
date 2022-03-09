@@ -1,0 +1,9 @@
+19:08:50 **** Incremental Build of configuration Nios II for project fixed_point ****
+make all 
+Info: Building ../fixed_point_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fixed_point_bsp/
+[BSP build complete]
+[fixed_point build complete]
+
+19:08:52 Build Finished (took 2s.105ms)
+
