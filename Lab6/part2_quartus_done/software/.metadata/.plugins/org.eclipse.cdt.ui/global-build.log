@@ -1,0 +1,1694 @@
+19:03:51 **** Build of configuration Nios II for project fixed_point ****
+make all 
+Info: Building ../fixed_point_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fixed_point_bsp/
+[BSP build complete]
+[fixed_point build complete]
+19:03:52 **** Build of configuration Nios II for project fixed_point_bsp ****
+make all 
+[BSP build complete]
+19:05:17 **** Incremental Build of configuration Nios II for project fixed_point ****
+make all 
+Info: Building ../fixed_point_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fixed_point_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../fixed_point_bsp//newlib/nios2-elf/include -I../fixed_point_bsp//HAL/inc -I../fixed_point_bsp/ -I../fixed_point_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:34:15: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  volatile int result;
+               ^
+Info: Linking fixed_point.elf
+nios2-elf-g++  -T'../fixed_point_bsp//linker.x' -msys-crt0='../fixed_point_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../fixed_point_bsp/ -L../fixed_point_bsp//newlib/nios2-elf/lib   -Wl,-Map=fixed_point.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o fixed_point.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert fixed_point.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2" --sopcinfo C:/Users/chunj/Downloads/lab6/part2/software/fixed_point_bsp/../../nios_system.sopcinfo
+Info: (fixed_point.elf) 69 KBytes program size (code + initialized data).
+Info:                   180 KBytes free for stack + heap.
+Info: Creating fixed_point.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source fixed_point.elf >fixed_point.objdump
+[fixed_point build complete]
+19:05:20 **** Incremental Build of configuration Nios II for project fixed_point_bsp ****
+make all 
+[BSP build complete]
+19:08:50 **** Incremental Build of configuration Nios II for project fixed_point ****
+make all 
+Info: Building ../fixed_point_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fixed_point_bsp/
+[BSP build complete]
+[fixed_point build complete]
+16:36:11 **** Build of configuration Nios II for project fixed_point ****
+make all 
+Info: Building ../fixed_point_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fixed_point_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../fixed_point_bsp//newlib/nios2-elf/include -I../fixed_point_bsp//HAL/inc -I../fixed_point_bsp/ -I../fixed_point_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:34:15: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  volatile int result;
+               ^
+Info: Linking fixed_point.elf
+nios2-elf-g++  -T'../fixed_point_bsp//linker.x' -msys-crt0='../fixed_point_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../fixed_point_bsp/ -L../fixed_point_bsp//newlib/nios2-elf/lib   -Wl,-Map=fixed_point.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o fixed_point.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert fixed_point.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2 quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2 quartus/software/fixed_point_bsp/../../nios_system.sopcinfo
+InvocationTargetException: null
+make: *** [fixed_point.elf] Error 1
+make: *** Deleting file `fixed_point.elf'
+16:36:15 **** Build of configuration Nios II for project fixed_point_bsp ****
+make all 
+[BSP build complete]
+16:36:45 **** Incremental Build of configuration Nios II for project fixed_point ****
+make all 
+Info: Building ../fixed_point_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fixed_point_bsp/
+[BSP build complete]
+Info: Linking fixed_point.elf
+nios2-elf-g++  -T'../fixed_point_bsp//linker.x' -msys-crt0='../fixed_point_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../fixed_point_bsp/ -L../fixed_point_bsp//newlib/nios2-elf/lib   -Wl,-Map=fixed_point.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o fixed_point.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert fixed_point.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2 quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2 quartus/software/fixed_point_bsp/../../nios_system.sopcinfo
+InvocationTargetException: null
+make: *** [fixed_point.elf] Error 1
+make: *** Deleting file `fixed_point.elf'
+16:36:47 **** Incremental Build of configuration Nios II for project fixed_point_bsp ****
+make all 
+[BSP build complete]
+16:53:00 **** Incremental Build of configuration Nios II for project fixed_point ****
+make all 
+Info: Building ../fixed_point_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fixed_point_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../fixed_point_bsp//newlib/nios2-elf/include -I../fixed_point_bsp//HAL/inc -I../fixed_point_bsp/ -I../fixed_point_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+Info: Linking fixed_point.elf
+nios2-elf-g++  -T'../fixed_point_bsp//linker.x' -msys-crt0='../fixed_point_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../fixed_point_bsp/ -L../fixed_point_bsp//newlib/nios2-elf/lib   -Wl,-Map=fixed_point.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o fixed_point.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert fixed_point.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2 quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2 quartus/software/fixed_point_bsp/../../nios_system.sopcinfo
+InvocationTargetException: null
+make: *** [fixed_point.elf] Error 1
+make: *** Deleting file `fixed_point.elf'
+16:53:02 **** Incremental Build of configuration Nios II for project fixed_point_bsp ****
+make all 
+[BSP build complete]
+16:54:44 **** Build of configuration Nios II for project part2_tester ****
+make all 
+Info: Building ../part2_tester_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_tester_bsp/
+Creating ./newlib...
+nios2-newlib-gen --no-multilib ./newlib-build-tmp ./newlib --custom "  -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  "		
+nios2-newlib-gen: Build directory ./newlib-build-tmp already exists, remove it manually first
+See log file build-newlib.2022-03-09-14-54-45 for more details.
+make[1]: *** [newlib] Error 1
+make: *** [../part2_tester_bsp/-recurs-make-lib] Error 2
+16:54:46 **** Build of configuration Nios II for project part2_tester_bsp ****
+make all 
+Creating ./newlib...
+nios2-newlib-gen --no-multilib ./newlib-build-tmp ./newlib --custom "  -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  "		
+nios2-newlib-gen: Build directory ./newlib-build-tmp already exists, remove it manually first
+See log file build-newlib.2022-03-09-14-54-47 for more details.
+make: *** [newlib] Error 1
+16:55:15 **** Incremental Build of configuration Nios II for project part2_tester ****
+make all 
+Info: Building ../part2_tester_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_tester_bsp/
+Creating ./newlib...
+nios2-newlib-gen --no-multilib ./newlib-build-tmp ./newlib --custom "  -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  "		
+nios2-newlib-gen: Build directory ./newlib-build-tmp already exists, remove it manually first
+See log file build-newlib.2022-03-09-14-55-16 for more details.
+make[1]: *** [newlib] Error 1
+make: *** [../part2_tester_bsp/-recurs-make-lib] Error 2
+16:55:16 **** Incremental Build of configuration Nios II for project part2_tester_bsp ****
+make all 
+Creating ./newlib...
+nios2-newlib-gen --no-multilib ./newlib-build-tmp ./newlib --custom "  -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  "		
+nios2-newlib-gen: Build directory ./newlib-build-tmp already exists, remove it manually first
+See log file build-newlib.2022-03-09-14-55-18 for more details.
+make: *** [newlib] Error 1
+17:00:07 **** Clean-only build of configuration Nios II for project part2_bsp ****
+make clean 
+[BSP clean complete]
+17:00:10 **** Clean-only build of configuration Nios II for project part2 ****
+make clean 
+[part2 clean complete]
+17:00:58 **** Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+Compiling alt_alarm_start.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_alarm_start.o HAL/src/alt_alarm_start.c
+Compiling alt_busy_sleep.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_busy_sleep.o HAL/src/alt_busy_sleep.c
+Compiling alt_close.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_close.o HAL/src/alt_close.c
+Compiling alt_dcache_flush.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_dcache_flush.o HAL/src/alt_dcache_flush.c
+Compiling alt_dcache_flush_all.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_dcache_flush_all.o HAL/src/alt_dcache_flush_all.c
+Compiling alt_dcache_flush_no_writeback.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_dcache_flush_no_writeback.o HAL/src/alt_dcache_flush_no_writeback.c
+Compiling alt_dev.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_dev.o HAL/src/alt_dev.c
+Compiling alt_dev_llist_insert.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_dev_llist_insert.o HAL/src/alt_dev_llist_insert.c
+Compiling alt_dma_rxchan_open.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_dma_rxchan_open.o HAL/src/alt_dma_rxchan_open.c
+Compiling alt_dma_txchan_open.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_dma_txchan_open.o HAL/src/alt_dma_txchan_open.c
+Compiling alt_do_ctors.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_do_ctors.o HAL/src/alt_do_ctors.c
+Compiling alt_do_dtors.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_do_dtors.o HAL/src/alt_do_dtors.c
+Compiling alt_ecc_fatal_entry.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254    -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_ecc_fatal_entry.o HAL/src/alt_ecc_fatal_entry.S
+Compiling alt_ecc_fatal_exception.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_ecc_fatal_exception.o HAL/src/alt_ecc_fatal_exception.c
+Compiling alt_env_lock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_env_lock.o HAL/src/alt_env_lock.c
+Compiling alt_environ.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_environ.o HAL/src/alt_environ.c
+Compiling alt_errno.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_errno.o HAL/src/alt_errno.c
+Compiling alt_exception_entry.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254    -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_entry.o HAL/src/alt_exception_entry.S
+Compiling alt_exception_muldiv.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254    -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_muldiv.o HAL/src/alt_exception_muldiv.S
+Compiling alt_exception_trap.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254    -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_trap.o HAL/src/alt_exception_trap.S
+Compiling alt_execve.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_execve.o HAL/src/alt_execve.c
+Compiling alt_exit.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_exit.o HAL/src/alt_exit.c
+Compiling alt_fcntl.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_fcntl.o HAL/src/alt_fcntl.c
+Compiling alt_fd_lock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_fd_lock.o HAL/src/alt_fd_lock.c
+Compiling alt_fd_unlock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_fd_unlock.o HAL/src/alt_fd_unlock.c
+Compiling alt_find_dev.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_find_dev.o HAL/src/alt_find_dev.c
+Compiling alt_find_file.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_find_file.o HAL/src/alt_find_file.c
+Compiling alt_flash_dev.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_flash_dev.o HAL/src/alt_flash_dev.c
+Compiling alt_fork.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_fork.o HAL/src/alt_fork.c
+Compiling alt_fs_reg.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_fs_reg.o HAL/src/alt_fs_reg.c
+Compiling alt_fstat.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_fstat.o HAL/src/alt_fstat.c
+Compiling alt_get_fd.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_get_fd.o HAL/src/alt_get_fd.c
+Compiling alt_getchar.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_getchar.o HAL/src/alt_getchar.c
+Compiling alt_getpid.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_getpid.o HAL/src/alt_getpid.c
+Compiling alt_gettod.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_gettod.o HAL/src/alt_gettod.c
+Compiling alt_gmon.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_gmon.o HAL/src/alt_gmon.c
+Compiling alt_icache_flush.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_icache_flush.o HAL/src/alt_icache_flush.c
+Compiling alt_icache_flush_all.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_icache_flush_all.o HAL/src/alt_icache_flush_all.c
+Compiling alt_iic.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_iic.o HAL/src/alt_iic.c
+Compiling alt_iic_isr_register.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_iic_isr_register.o HAL/src/alt_iic_isr_register.c
+Compiling alt_instruction_exception_entry.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_instruction_exception_entry.o HAL/src/alt_instruction_exception_entry.c
+Compiling alt_instruction_exception_register.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_instruction_exception_register.o HAL/src/alt_instruction_exception_register.c
+Compiling alt_io_redirect.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_io_redirect.o HAL/src/alt_io_redirect.c
+Compiling alt_ioctl.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_ioctl.o HAL/src/alt_ioctl.c
+Compiling alt_irq_entry.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254    -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_irq_entry.o HAL/src/alt_irq_entry.S
+Compiling alt_irq_handler.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_irq_handler.o HAL/src/alt_irq_handler.c
+Compiling alt_irq_register.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_irq_register.o HAL/src/alt_irq_register.c
+Compiling alt_irq_vars.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_irq_vars.o HAL/src/alt_irq_vars.c
+Compiling alt_isatty.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_isatty.o HAL/src/alt_isatty.c
+Compiling alt_kill.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_kill.o HAL/src/alt_kill.c
+Compiling alt_link.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_link.o HAL/src/alt_link.c
+Compiling alt_load.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_load.o HAL/src/alt_load.c
+Compiling alt_log_macro.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254    -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_log_macro.o HAL/src/alt_log_macro.S
+Compiling alt_log_printf.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_log_printf.o HAL/src/alt_log_printf.c
+Compiling alt_lseek.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_lseek.o HAL/src/alt_lseek.c
+Compiling alt_main.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_main.o HAL/src/alt_main.c
+Compiling alt_malloc_lock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_malloc_lock.o HAL/src/alt_malloc_lock.c
+Compiling alt_mcount.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254    -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_mcount.o HAL/src/alt_mcount.S
+Compiling alt_open.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_open.o HAL/src/alt_open.c
+Compiling alt_printf.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_printf.o HAL/src/alt_printf.c
+Compiling alt_putchar.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_putchar.o HAL/src/alt_putchar.c
+Compiling alt_putcharbuf.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_putcharbuf.o HAL/src/alt_putcharbuf.c
+Compiling alt_putstr.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_putstr.o HAL/src/alt_putstr.c
+Compiling alt_read.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_read.o HAL/src/alt_read.c
+Compiling alt_release_fd.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_release_fd.o HAL/src/alt_release_fd.c
+Compiling alt_remap_cached.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_remap_cached.o HAL/src/alt_remap_cached.c
+Compiling alt_remap_uncached.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_remap_uncached.o HAL/src/alt_remap_uncached.c
+Compiling alt_rename.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_rename.o HAL/src/alt_rename.c
+Compiling alt_sbrk.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_sbrk.o HAL/src/alt_sbrk.c
+Compiling alt_settod.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_settod.o HAL/src/alt_settod.c
+Compiling alt_software_exception.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254    -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_software_exception.o HAL/src/alt_software_exception.S
+Compiling alt_stat.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_stat.o HAL/src/alt_stat.c
+Compiling alt_tick.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_tick.o HAL/src/alt_tick.c
+Compiling alt_times.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_times.o HAL/src/alt_times.c
+Compiling alt_uncached_free.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_uncached_free.o HAL/src/alt_uncached_free.c
+Compiling alt_uncached_malloc.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_uncached_malloc.o HAL/src/alt_uncached_malloc.c
+Compiling alt_unlink.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_unlink.o HAL/src/alt_unlink.c
+Compiling alt_usleep.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_usleep.o HAL/src/alt_usleep.c
+Compiling alt_wait.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_wait.o HAL/src/alt_wait.c
+Compiling alt_write.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/alt_write.o HAL/src/alt_write.c
+Compiling altera_nios2_gen2_irq.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/HAL/src/altera_nios2_gen2_irq.o HAL/src/altera_nios2_gen2_irq.c
+Compiling crt0.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254    -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/crt0.o HAL/src/crt0.S
+Compiling alt_sys_init.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/alt_sys_init.o alt_sys_init.c
+Compiling altera_avalon_jtag_uart_fd.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/drivers/src/altera_avalon_jtag_uart_fd.o drivers/src/altera_avalon_jtag_uart_fd.c
+Compiling altera_avalon_jtag_uart_init.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/drivers/src/altera_avalon_jtag_uart_init.o drivers/src/altera_avalon_jtag_uart_init.c
+Compiling altera_avalon_jtag_uart_ioctl.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/drivers/src/altera_avalon_jtag_uart_ioctl.o drivers/src/altera_avalon_jtag_uart_ioctl.c
+Compiling altera_avalon_jtag_uart_read.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/drivers/src/altera_avalon_jtag_uart_read.o drivers/src/altera_avalon_jtag_uart_read.c
+Compiling altera_avalon_jtag_uart_write.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/drivers/src/altera_avalon_jtag_uart_write.o drivers/src/altera_avalon_jtag_uart_write.c
+Compiling altera_avalon_performance_counter.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/drivers/src/altera_avalon_performance_counter.o drivers/src/altera_avalon_performance_counter.c
+Compiling perf_print_formatted_report.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./newlib/nios2-elf/include -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254   -o obj/drivers/src/perf_print_formatted_report.o drivers/src/perf_print_formatted_report.c
+Creating libhal_bsp.a...
+rm -f -f libhal_bsp.a
+nios2-elf-ar -src libhal_bsp.a obj/HAL/src/alt_alarm_start.o obj/HAL/src/alt_busy_sleep.o obj/HAL/src/alt_close.o obj/HAL/src/alt_dcache_flush.o obj/HAL/src/alt_dcache_flush_all.o obj/HAL/src/alt_dcache_flush_no_writeback.o obj/HAL/src/alt_dev.o obj/HAL/src/alt_dev_llist_insert.o obj/HAL/src/alt_dma_rxchan_open.o obj/HAL/src/alt_dma_txchan_open.o obj/HAL/src/alt_do_ctors.o obj/HAL/src/alt_do_dtors.o obj/HAL/src/alt_ecc_fatal_entry.o obj/HAL/src/alt_ecc_fatal_exception.o obj/HAL/src/alt_env_lock.o obj/HAL/src/alt_environ.o obj/HAL/src/alt_errno.o obj/HAL/src/alt_exception_entry.o obj/HAL/src/alt_exception_muldiv.o obj/HAL/src/alt_exception_trap.o obj/HAL/src/alt_execve.o obj/HAL/src/alt_exit.o obj/HAL/src/alt_fcntl.o obj/HAL/src/alt_fd_lock.o obj/HAL/src/alt_fd_unlock.o obj/HAL/src/alt_find_dev.o obj/HAL/src/alt_find_file.o obj/HAL/src/alt_flash_dev.o obj/HAL/src/alt_fork.o obj/HAL/src/alt_fs_reg.o obj/HAL/src/alt_fstat.o obj/HAL/src/alt_get_fd.o obj/HAL/src/alt_getchar.o obj/HAL/src/alt_getpid.o obj/HAL/src/alt_gettod.o obj/HAL/src/alt_gmon.o obj/HAL/src/alt_icache_flush.o obj/HAL/src/alt_icache_flush_all.o obj/HAL/src/alt_iic.o obj/HAL/src/alt_iic_isr_register.o obj/HAL/src/alt_instruction_exception_entry.o obj/HAL/src/alt_instruction_exception_register.o obj/HAL/src/alt_io_redirect.o obj/HAL/src/alt_ioctl.o obj/HAL/src/alt_irq_entry.o obj/HAL/src/alt_irq_handler.o obj/HAL/src/alt_irq_register.o obj/HAL/src/alt_irq_vars.o obj/HAL/src/alt_isatty.o obj/HAL/src/alt_kill.o obj/HAL/src/alt_link.o obj/HAL/src/alt_load.o obj/HAL/src/alt_log_macro.o obj/HAL/src/alt_log_printf.o obj/HAL/src/alt_lseek.o obj/HAL/src/alt_main.o obj/HAL/src/alt_malloc_lock.o obj/HAL/src/alt_mcount.o obj/HAL/src/alt_open.o obj/HAL/src/alt_printf.o obj/HAL/src/alt_putchar.o obj/HAL/src/alt_putcharbuf.o obj/HAL/src/alt_putstr.o obj/HAL/src/alt_read.o obj/HAL/src/alt_release_fd.o obj/HAL/src/alt_remap_cached.o obj/HAL/src/alt_remap_uncached.o obj/HAL/src/alt_rename.o obj/HAL/src/alt_sbrk.o obj/HAL/src/alt_settod.o obj/HAL/src/alt_software_exception.o obj/HAL/src/alt_stat.o obj/HAL/src/alt_tick.o obj/HAL/src/alt_times.o obj/HAL/src/alt_uncached_free.o obj/HAL/src/alt_uncached_malloc.o obj/HAL/src/alt_unlink.o obj/HAL/src/alt_usleep.o obj/HAL/src/alt_wait.o obj/HAL/src/alt_write.o obj/HAL/src/altera_nios2_gen2_irq.o obj/HAL/src/crt0.o obj/alt_sys_init.o obj/drivers/src/altera_avalon_jtag_uart_fd.o obj/drivers/src/altera_avalon_jtag_uart_init.o obj/drivers/src/altera_avalon_jtag_uart_ioctl.o obj/drivers/src/altera_avalon_jtag_uart_read.o obj/drivers/src/altera_avalon_jtag_uart_write.o obj/drivers/src/altera_avalon_performance_counter.o obj/drivers/src/perf_print_formatted_report.o
+Creating ./newlib...
+nios2-newlib-gen --no-multilib ./newlib-build-tmp ./newlib --custom "  -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  "		
+
+Building Newlib may take a few minutes... Please be patient.
+
+Newlib Source Dir:  /cygdrive/c/intelfpga_lite/18.0/nios2eds/bin/gnu/src/newlib-2.2
+Newlib Build Dir:   /cygdrive/c/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/newlib-build-tmp
+Newlib Install Dir: /cygdrive/c/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/newlib
+
+Configuring newlib to build a smallc C library in /cygdrive/c/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/newlib-build-tmp/smallc...
+Configure smallc newlib -> COMPLETE.
+Compiling newlib for a smallc C library...
+Command canceled
+17:02:29 **** Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+hello_world.c:1:2: error: stray '#' in program
+ a#include <stdio.h>
+  ^
+hello_world.c:1:1: error: unknown type name 'a'
+ a#include <stdio.h>
+ ^
+hello_world.c:1:11: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+ a#include <stdio.h>
+           ^
+In file included from c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:11:0,
+                 from hello_world.c:2:
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:88:6: error: unknown type name 'size_t'
+ _PTR _EXFUN(bsearch,(const _PTR __key,
+      ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:88:6: error: unknown type name 'size_t'
+ _PTR _EXFUN(bsearch,(const _PTR __key,
+      ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:93:6: error: unknown type name 'size_t'
+ _PTR _EXFUN_NOTHROW(calloc,(size_t __nmemb, size_t __size));
+      ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:93:6: error: unknown type name 'size_t'
+ _PTR _EXFUN_NOTHROW(calloc,(size_t __nmemb, size_t __size));
+      ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:107:6: error: unknown type name 'size_t'
+ _PTR _EXFUN_NOTHROW(malloc,(size_t __size));
+      ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:108:5: error: unknown type name 'size_t'
+ int _EXFUN(mblen,(const char *, size_t));
+     ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:109:5: error: unknown type name 'size_t'
+ int _EXFUN(_mblen_r,(struct _reent *, const char *, size_t, _mbstate_t *));
+     ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:110:5: error: unknown type name 'size_t'
+ int _EXFUN(mbtowc,(wchar_t *__restrict, const char *__restrict, size_t));
+     ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:111:5: error: unknown type name 'size_t'
+ int _EXFUN(_mbtowc_r,(struct _reent *, wchar_t *__restrict, const char *__restrict, size_t, _mbstate_t *));
+     ^
+In file included from hello_world.c:2:0:
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:114:1: error: unknown type name 'size_t'
+ size_t _EXFUN(mbstowcs,(wchar_t *__restrict, const char *__restrict, size_t));
+ ^
+In file included from c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:11:0,
+                 from hello_world.c:2:
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:114:8: error: unknown type name 'size_t'
+ size_t _EXFUN(mbstowcs,(wchar_t *__restrict, const char *__restrict, size_t));
+        ^
+In file included from hello_world.c:2:0:
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:115:1: error: unknown type name 'size_t'
+ size_t _EXFUN(_mbstowcs_r,(struct _reent *, wchar_t *__restrict, const char *__restrict, size_t, _mbstate_t *));
+ ^
+In file included from c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:11:0,
+                 from hello_world.c:2:
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:115:8: error: unknown type name 'size_t'
+ size_t _EXFUN(_mbstowcs_r,(struct _reent *, wchar_t *__restrict, const char *__restrict, size_t, _mbstate_t *));
+        ^
+In file included from hello_world.c:2:0:
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:116:1: error: unknown type name 'size_t'
+ size_t _EXFUN(wcstombs,(char *__restrict, const wchar_t *__restrict, size_t));
+ ^
+In file included from c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:11:0,
+                 from hello_world.c:2:
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:116:8: error: unknown type name 'size_t'
+ size_t _EXFUN(wcstombs,(char *__restrict, const wchar_t *__restrict, size_t));
+        ^
+In file included from hello_world.c:2:0:
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:117:1: error: unknown type name 'size_t'
+ size_t _EXFUN(_wcstombs_r,(struct _reent *, char *__restrict, const wchar_t *__restrict, size_t, _mbstate_t *));
+ ^
+In file included from c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:11:0,
+                 from hello_world.c:2:
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:117:8: error: unknown type name 'size_t'
+ size_t _EXFUN(_wcstombs_r,(struct _reent *, char *__restrict, const wchar_t *__restrict, size_t, _mbstate_t *));
+        ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:134:7: error: unknown type name 'size_t'
+ _VOID _EXFUN(qsort,(_PTR __base, size_t __nmemb, size_t __size, __compar_fn_t _compar));
+       ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:134:7: error: unknown type name 'size_t'
+ _VOID _EXFUN(qsort,(_PTR __base, size_t __nmemb, size_t __size, __compar_fn_t _compar));
+       ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:136:6: error: unknown type name 'size_t'
+ _PTR _EXFUN_NOTHROW(realloc,(_PTR __r, size_t __size));
+      ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:138:6: error: unknown type name 'size_t'
+ _PTR _EXFUN(reallocf,(_PTR __r, size_t __size));
+      ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:176:6: error: unknown type name 'size_t'
+ _PTR _EXFUN(_reallocf_r,(struct _reent *, _PTR, size_t));
+      ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:258:6: error: unknown type name 'size_t'
+ _PTR _EXFUN_NOTHROW(_malloc_r,(struct _reent *, size_t));
+      ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:259:6: error: unknown type name 'size_t'
+ _PTR _EXFUN_NOTHROW(_calloc_r,(struct _reent *, size_t, size_t));
+      ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:259:6: error: unknown type name 'size_t'
+ _PTR _EXFUN_NOTHROW(_calloc_r,(struct _reent *, size_t, size_t));
+      ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:261:6: error: unknown type name 'size_t'
+ _PTR _EXFUN_NOTHROW(_realloc_r,(struct _reent *, _PTR, size_t));
+      ^
+hello_world.c: In function 'main':
+hello_world.c:48:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("Overhead:%f\n", (float)overhead_cycles/NUM_ITEMS);
+  ^
+hello_world.c:48:2: warning: incompatible implicit declaration of built-in function 'printf'
+hello_world.c:48:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+hello_world.c:34:15: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  volatile int result;
+               ^
+make: *** [obj/default/hello_world.o] Error 1
+17:02:30 **** Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+17:02:41 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+hello_world.c:1:2: error: stray '#' in program
+ a#include <stdio.h>
+  ^
+hello_world.c:1:1: error: unknown type name 'a'
+ a#include <stdio.h>
+ ^
+hello_world.c:1:11: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+ a#include <stdio.h>
+           ^
+In file included from c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:11:0,
+                 from hello_world.c:2:
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:88:6: error: unknown type name 'size_t'
+ _PTR _EXFUN(bsearch,(const _PTR __key,
+      ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:88:6: error: unknown type name 'size_t'
+ _PTR _EXFUN(bsearch,(const _PTR __key,
+      ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:93:6: error: unknown type name 'size_t'
+ _PTR _EXFUN_NOTHROW(calloc,(size_t __nmemb, size_t __size));
+      ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:93:6: error: unknown type name 'size_t'
+ _PTR _EXFUN_NOTHROW(calloc,(size_t __nmemb, size_t __size));
+      ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:107:6: error: unknown type name 'size_t'
+ _PTR _EXFUN_NOTHROW(malloc,(size_t __size));
+      ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:108:5: error: unknown type name 'size_t'
+ int _EXFUN(mblen,(const char *, size_t));
+     ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:109:5: error: unknown type name 'size_t'
+ int _EXFUN(_mblen_r,(struct _reent *, const char *, size_t, _mbstate_t *));
+     ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:110:5: error: unknown type name 'size_t'
+ int _EXFUN(mbtowc,(wchar_t *__restrict, const char *__restrict, size_t));
+     ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:111:5: error: unknown type name 'size_t'
+ int _EXFUN(_mbtowc_r,(struct _reent *, wchar_t *__restrict, const char *__restrict, size_t, _mbstate_t *));
+     ^
+In file included from hello_world.c:2:0:
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:114:1: error: unknown type name 'size_t'
+ size_t _EXFUN(mbstowcs,(wchar_t *__restrict, const char *__restrict, size_t));
+ ^
+In file included from c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:11:0,
+                 from hello_world.c:2:
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:114:8: error: unknown type name 'size_t'
+ size_t _EXFUN(mbstowcs,(wchar_t *__restrict, const char *__restrict, size_t));
+        ^
+In file included from hello_world.c:2:0:
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:115:1: error: unknown type name 'size_t'
+ size_t _EXFUN(_mbstowcs_r,(struct _reent *, wchar_t *__restrict, const char *__restrict, size_t, _mbstate_t *));
+ ^
+In file included from c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:11:0,
+                 from hello_world.c:2:
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:115:8: error: unknown type name 'size_t'
+ size_t _EXFUN(_mbstowcs_r,(struct _reent *, wchar_t *__restrict, const char *__restrict, size_t, _mbstate_t *));
+        ^
+In file included from hello_world.c:2:0:
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:116:1: error: unknown type name 'size_t'
+ size_t _EXFUN(wcstombs,(char *__restrict, const wchar_t *__restrict, size_t));
+ ^
+In file included from c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:11:0,
+                 from hello_world.c:2:
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:116:8: error: unknown type name 'size_t'
+ size_t _EXFUN(wcstombs,(char *__restrict, const wchar_t *__restrict, size_t));
+        ^
+In file included from hello_world.c:2:0:
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:117:1: error: unknown type name 'size_t'
+ size_t _EXFUN(_wcstombs_r,(struct _reent *, char *__restrict, const wchar_t *__restrict, size_t, _mbstate_t *));
+ ^
+In file included from c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:11:0,
+                 from hello_world.c:2:
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:117:8: error: unknown type name 'size_t'
+ size_t _EXFUN(_wcstombs_r,(struct _reent *, char *__restrict, const wchar_t *__restrict, size_t, _mbstate_t *));
+        ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:134:7: error: unknown type name 'size_t'
+ _VOID _EXFUN(qsort,(_PTR __base, size_t __nmemb, size_t __size, __compar_fn_t _compar));
+       ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:134:7: error: unknown type name 'size_t'
+ _VOID _EXFUN(qsort,(_PTR __base, size_t __nmemb, size_t __size, __compar_fn_t _compar));
+       ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:136:6: error: unknown type name 'size_t'
+ _PTR _EXFUN_NOTHROW(realloc,(_PTR __r, size_t __size));
+      ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:138:6: error: unknown type name 'size_t'
+ _PTR _EXFUN(reallocf,(_PTR __r, size_t __size));
+      ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:176:6: error: unknown type name 'size_t'
+ _PTR _EXFUN(_reallocf_r,(struct _reent *, _PTR, size_t));
+      ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:258:6: error: unknown type name 'size_t'
+ _PTR _EXFUN_NOTHROW(_malloc_r,(struct _reent *, size_t));
+      ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:259:6: error: unknown type name 'size_t'
+ _PTR _EXFUN_NOTHROW(_calloc_r,(struct _reent *, size_t, size_t));
+      ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:259:6: error: unknown type name 'size_t'
+ _PTR _EXFUN_NOTHROW(_calloc_r,(struct _reent *, size_t, size_t));
+      ^
+c:\intelfpga_lite\18.0\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdlib.h:261:6: error: unknown type name 'size_t'
+ _PTR _EXFUN_NOTHROW(_realloc_r,(struct _reent *, _PTR, size_t));
+      ^
+hello_world.c: In function 'main':
+hello_world.c:48:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("Overhead:%f\n", (float)overhead_cycles/NUM_ITEMS);
+  ^
+hello_world.c:48:2: warning: incompatible implicit declaration of built-in function 'printf'
+hello_world.c:48:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+hello_world.c:34:15: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  volatile int result;
+               ^
+make: *** [obj/default/hello_world.o] Error 1
+17:02:43 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+17:03:07 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:34:15: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  volatile int result;
+               ^
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 69 KBytes program size (code + initialized data).
+Info:             180 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+17:03:10 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+17:04:48 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+17:05:38 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:35:15: warning: variable 'result2' set but not used [-Wunused-but-set-variable]
+  volatile int result2;
+               ^
+hello_world.c:34:15: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  volatile int result;
+               ^
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 69 KBytes program size (code + initialized data).
+Info:             180 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+17:05:42 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+17:05:52 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+17:07:04 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:35:15: warning: variable 'result2' set but not used [-Wunused-but-set-variable]
+  volatile int result2;
+               ^
+hello_world.c:34:15: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  volatile int result;
+               ^
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 69 KBytes program size (code + initialized data).
+Info:             180 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+17:07:08 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+17:07:14 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+17:07:36 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+17:07:59 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+17:08:00 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+17:08:08 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:34:15: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  volatile int result;
+               ^
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 69 KBytes program size (code + initialized data).
+Info:             180 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+17:08:21 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+17:08:23 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+17:08:27 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+17:09:12 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:34:15: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  volatile int result;
+               ^
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 69 KBytes program size (code + initialized data).
+Info:             180 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+17:09:15 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+17:09:19 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+17:09:56 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:35:15: warning: variable 'result2' set but not used [-Wunused-but-set-variable]
+  volatile int result2;
+               ^
+hello_world.c:34:15: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  volatile int result;
+               ^
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 69 KBytes program size (code + initialized data).
+Info:             180 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+17:09:58 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+17:10:02 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+17:15:43 **** Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+17:16:10 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:38:2: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'pre_measurement'
+  pre_measurement();
+  ^
+hello_world.c:35:15: warning: variable 'result2' set but not used [-Wunused-but-set-variable]
+  volatile int result2;
+               ^
+hello_world.c:34:15: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  volatile int result;
+               ^
+make: *** [obj/default/hello_world.o] Error 1
+17:16:11 **** Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+17:16:19 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:38:2: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'pre_measurement'
+  pre_measurement();
+  ^
+hello_world.c:35:15: warning: variable 'result2' set but not used [-Wunused-but-set-variable]
+  volatile int result2;
+               ^
+hello_world.c:34:15: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  volatile int result;
+               ^
+make: *** [obj/default/hello_world.o] Error 1
+17:16:20 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+17:16:23 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:36:15: warning: unused variable 'result3' [-Wunused-variable]
+  volatile int result3;
+               ^
+hello_world.c:35:15: warning: variable 'result2' set but not used [-Wunused-but-set-variable]
+  volatile int result2;
+               ^
+hello_world.c:34:15: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  volatile int result;
+               ^
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 69 KBytes program size (code + initialized data).
+Info:             180 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+17:16:26 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+17:16:35 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+17:20:57 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:145:10: warning: format '%f' expects argument of type 'double', but argument 3 has type 'fixed {aka int}' [-Wformat=]
+   printf("%f, %f, err: %f\n", emafl[j], emafi[j], temp_err);
+          ^
+hello_world.c:145:10: warning: format '%f' expects argument of type 'double', but argument 3 has type 'fixed {aka int}' [-Wformat=]
+hello_world.c:154:6: warning: unused variable 'floating_point_time' [-Wunused-variable]
+  int floating_point_time = (int)perf_get_section_time ((void*)PERFORMANCE_COUNTER_0_BASE, 2);
+      ^
+hello_world.c:91:8: warning: variable 'ema1' set but not used [-Wunused-but-set-variable]
+  float ema1[10];
+        ^
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 71 KBytes program size (code + initialized data).
+Info:             177 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+17:21:00 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+17:21:59 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:145:10: warning: format '%f' expects argument of type 'double', but argument 3 has type 'fixed {aka int}' [-Wformat=]
+   printf("%f, %f, err: %f\n", emafl[j], emafi[j], temp_err);
+          ^
+hello_world.c:145:10: warning: format '%f' expects argument of type 'double', but argument 3 has type 'fixed {aka int}' [-Wformat=]
+hello_world.c:91:8: warning: variable 'ema1' set but not used [-Wunused-but-set-variable]
+  float ema1[10];
+        ^
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 71 KBytes program size (code + initialized data).
+Info:             177 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+17:22:02 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+17:23:08 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+17:33:33 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:145:9: error: 'i' undeclared (first use in this function)
+   emafl[i] = FIXED_TO_FLOAT(emafi[i]);
+         ^
+hello_world.c:145:9: note: each undeclared identifier is reported only once for each function it appears in
+hello_world.c:162:43: error: 'floating_cycles' undeclared (first use in this function)
+  printf("Fixed Point:%f\n", fixed_cycles, floating_cycles);
+                                           ^
+hello_world.c:92:8: warning: variable 'emafi' set but not used [-Wunused-but-set-variable]
+  fixed emafi[10];
+        ^
+make: *** [obj/default/hello_world.o] Error 1
+17:33:35 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+17:34:02 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 71 KBytes program size (code + initialized data).
+Info:             177 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+17:34:05 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+17:34:14 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+17:35:14 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:82:8: warning: variable 'd1' set but not used [-Wunused-but-set-variable]
+  float d1[10];
+        ^
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 71 KBytes program size (code + initialized data).
+Info:             177 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+17:35:17 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+17:35:23 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+17:40:14 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:164:2: error: expected ';' before 'while'
+  while(1);
+  ^
+make: *** [obj/default/hello_world.o] Error 1
+17:40:16 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+17:40:31 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:164:2: error: expected ';' before 'while'
+  while(1);
+  ^
+make: *** [obj/default/hello_world.o] Error 1
+17:40:32 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+17:40:40 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 71 KBytes program size (code + initialized data).
+Info:             177 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+17:40:43 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+17:40:52 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+17:42:14 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 76 KBytes program size (code + initialized data).
+Info:             172 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+17:42:17 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+17:42:32 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+12:41:44 **** Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+12:41:47 **** Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+12:43:03 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+12:44:11 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+12:44:13 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+12:44:21 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 71 KBytes program size (code + initialized data).
+Info:             177 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+12:44:38 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+12:48:20 **** Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+12:48:22 **** Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+12:57:15 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 71 KBytes program size (code + initialized data).
+Info:             177 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+12:57:25 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+12:57:36 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+12:58:30 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 76 KBytes program size (code + initialized data).
+Info:             172 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+12:58:33 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+12:58:36 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+13:01:26 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 76 KBytes program size (code + initialized data).
+Info:             172 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+13:01:30 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+13:01:33 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+13:02:03 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 71 KBytes program size (code + initialized data).
+Info:             177 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+13:02:06 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+13:02:11 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+13:05:54 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 71 KBytes program size (code + initialized data).
+Info:             177 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+13:05:57 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+13:06:08 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+13:09:53 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 71 KBytes program size (code + initialized data).
+Info:             177 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+13:09:56 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+13:10:00 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+13:10:56 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 71 KBytes program size (code + initialized data).
+Info:             177 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+13:10:59 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+13:11:06 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+13:12:04 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 71 KBytes program size (code + initialized data).
+Info:             177 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+13:12:07 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+13:12:13 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+13:12:55 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 71 KBytes program size (code + initialized data).
+Info:             177 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+13:12:58 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+13:13:05 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+13:14:52 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:158:29: error: 'fixed_cycles' undeclared (first use in this function)
+  printf("Fixed Point:%f\n", fixed_cycles);
+                             ^
+hello_world.c:158:29: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [obj/default/hello_world.o] Error 1
+13:14:53 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+13:14:58 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:158:29: error: 'fixed_cycles' undeclared (first use in this function)
+  printf("Fixed Point:%f\n", fixed_cycles);
+                             ^
+hello_world.c:158:29: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [obj/default/hello_world.o] Error 1
+13:15:05 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:158:29: error: 'fixed_cycles' undeclared (first use in this function)
+  printf("Fixed Point:%f\n", fixed_cycles);
+                             ^
+hello_world.c:158:29: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [obj/default/hello_world.o] Error 1
+13:15:27 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 75 KBytes program size (code + initialized data).
+Info:             173 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+13:15:37 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+13:15:38 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+13:15:46 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+13:16:24 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 76 KBytes program size (code + initialized data).
+Info:             172 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+13:16:27 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+13:16:33 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+13:24:43 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 75 KBytes program size (code + initialized data).
+Info:             173 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+13:24:47 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+13:24:52 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+13:26:03 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 71 KBytes program size (code + initialized data).
+Info:             177 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+13:26:06 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+13:26:10 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+13:28:09 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 71 KBytes program size (code + initialized data).
+Info:             177 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+13:28:12 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+13:28:20 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+13:29:52 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:95:8: warning: unused variable 'prev' [-Wunused-variable]
+  fixed prev = d2[0];
+        ^
+hello_world.c:94:8: warning: unused variable 'alpha' [-Wunused-variable]
+  fixed alpha = FLOAT_TO_FIXED(0.1);
+        ^
+hello_world.c: At top level:
+hello_world.c:56:13: warning: 'pre_measurement' defined but not used [-Wunused-function]
+ static void pre_measurement(void){
+             ^
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 71 KBytes program size (code + initialized data).
+Info:             177 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+13:29:55 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+13:30:17 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:95:8: warning: unused variable 'prev' [-Wunused-variable]
+  fixed prev = d2[0];
+        ^
+hello_world.c:94:8: warning: unused variable 'alpha' [-Wunused-variable]
+  fixed alpha = FLOAT_TO_FIXED(0.1);
+        ^
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 71 KBytes program size (code + initialized data).
+Info:             177 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+13:30:21 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+13:30:26 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+13:31:00 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:95:8: warning: unused variable 'prev' [-Wunused-variable]
+  fixed prev = d2[0];
+        ^
+hello_world.c:94:8: warning: unused variable 'alpha' [-Wunused-variable]
+  fixed alpha = FLOAT_TO_FIXED(0.1);
+        ^
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 71 KBytes program size (code + initialized data).
+Info:             177 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+13:31:03 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+13:31:06 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+13:31:29 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:95:8: warning: unused variable 'prev' [-Wunused-variable]
+  fixed prev = d2[0];
+        ^
+hello_world.c:94:8: warning: unused variable 'alpha' [-Wunused-variable]
+  fixed alpha = FLOAT_TO_FIXED(0.1);
+        ^
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 75 KBytes program size (code + initialized data).
+Info:             173 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+13:31:32 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+13:31:36 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+13:34:30 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 71 KBytes program size (code + initialized data).
+Info:             177 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+13:34:33 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+13:34:41 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+13:36:03 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 71 KBytes program size (code + initialized data).
+Info:             177 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+13:36:05 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+13:36:09 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
+13:36:56 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part2_bsp//newlib/nios2-elf/include -I../part2_bsp//HAL/inc -I../part2_bsp/ -I../part2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/hello_world.o hello_world.c
+Info: Linking part2.elf
+nios2-elf-g++  -T'../part2_bsp//linker.x' -msys-crt0='../part2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part2_bsp/ -L../part2_bsp//newlib/nios2-elf/lib   -Wl,-Map=part2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o part2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert part2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/chunj/Downloads/lab6/part2_quartus" --sopcinfo C:/Users/chunj/Downloads/lab6/part2_quartus/software/part2_bsp/../../nios_system.sopcinfo
+Info: (part2.elf) 75 KBytes program size (code + initialized data).
+Info:             173 KBytes free for stack + heap.
+Info: Creating part2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part2.elf >part2.objdump
+[part2 build complete]
+13:37:00 **** Incremental Build of configuration Nios II for project part2_bsp ****
+make all 
+[BSP build complete]
+13:37:03 **** Incremental Build of configuration Nios II for project part2 ****
+make all 
+Info: Building ../part2_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part2_bsp/
+[BSP build complete]
+[part2 build complete]
