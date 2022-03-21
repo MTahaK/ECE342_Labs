@@ -1,0 +1,2 @@
+make&cls
+.\part3
