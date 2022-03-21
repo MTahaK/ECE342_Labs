@@ -44,32 +44,15 @@ float FLOAT_FACT(float n){
 }
 float SINE_FL(float x, int order){
     float result = 0.0;
-    // float fact = 1.0;
-    for(int i = 0; i <= order; i++){
-        result += (pow(-1, i)) * ( pow(x, 2*i+1) / FLOAT_FACT(2*i+1) );
+    float x_pow = x;
+    for(int i = 0; i < order; i++){
+        // printf("%f\n", FLOAT_FACT(2*i+1));
+        // if(i!=0) x_pow = x_pow * x * x;
+        // printf("%f\n", x_po  w);
+        result += (pow(-1.0, i)) * (  pow(x, 2*i+1) / FLOAT_FACT(2*i+1) );
     }
     return result;
 
-}
-
-float compute_sine_float(int iterations, float input) {
-    float one = -1.0; 
-    float factorial = 1.0;  
-    float x = 1.0; 
-    float computed_sine = 0.0; 
-
-    for(int i = 0; i <= iterations * 2; i++) {
-        x *= input;  
-        factorial *= i + 1; 
-        if(i % 2 == 0) {
-            one *= -1.0; 
-        }
-
-        if((i + 1) % 2 == 1) {
-            computed_sine += (one * (x / factorial));
-        }
-    }
-    return computed_sine;
 }
 struct Q_format{
 	int m;
@@ -83,7 +66,8 @@ int main(){
     
     for(int i = 0; i < 10; i++){
         float x = dataset[i];
-        printf("sin(%f): %f (math.h), %f (float imp.)\n", x, sin(x), SINE_FL(x, 10));
+        SINE_FL(x, 10);
+        printf("sin(%f): %f (math.h), %f (float imp.)\n", x, sin(x), SINE_FL(x, 20));
     }
 	return 0;
 } 
