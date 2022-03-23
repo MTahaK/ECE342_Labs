@@ -106,7 +106,7 @@ int main(){
         for(int j = 0; j < 10; j++){
             float x = dataset[j];
             benchmark = sinf(x);
-            // computed = SINE_FL(x,10);
+            // computed = SINE_FL(x,6);
             computed = FIXED_TO_FLOAT(SINE_FIXED(FLOAT_TO_FIXED(x), 6, 0));
             float temp_error = benchmark - computed;
             if(temp_error < 0) temp_error = temp_error * -1;

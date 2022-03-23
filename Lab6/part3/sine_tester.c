@@ -116,40 +116,40 @@ int main(void){
 //		volatile int result;
 
 	SET_Q_FORMAT(23, 31-23);
+	int order = 6;
+
     fixed conv_dataset[10];
+
     for(int i = 0;i < 10; i++){
     	conv_dataset[i] = FLOAT_TO_FIXED(dataset[i]);
 		// printf("%f, %d\n", dataset[i], conv_dataset[i]);
     }
-	fixed one = FLOAT_TO_FIXED(1.0);
+	
+	
+
+	// Fixed Point
 	fixed x = 0;
 	fixed x_pow = 0;
 	fixed x_squared = 0;
-	
+	fixed result = 0;
 	fixed results[10];
-	
 
-	float fl_result = 0.0;
-    float fl_fact = 1.0;
-	float fl_results[10];
-	int order = 6;
-
+	int fact_term = 1;
+	int fact = 1;
 	// pre_measurement();
 
-	// Fixed Point
 	for (int j=0; j<NUM_ITEMS; j++){
 		// PERF_BEGIN (PERFORMANCE_COUNTER_0_BASE, 1);
 		for(int i = 0; i < 10; i++){
-    		int fact_term = 1;
-    		int fact = 1;
+    		fact_term = 1;
+    		fact = 1;
 			x = conv_dataset[i];
 			x_pow = x;
 			x_squared = FIXED_MULT(x, x);
-			fixed result = x_pow / fact;
+			result = x_pow / fact;
 			for(int k = 1; k <= order; k++){
 				x_pow = FIXED_MULT( x_pow, x_squared);
-				fact = fact * (fact_term+1) * (fact_term+2);
-				fact_term=fact_term+2;
+				fact = fact*(fact_term=fact_term+1)*(fact_term=fact_term+1);
 				if(fact == 0) fact = 1;
 				if( k % 2 == 0){
 					result += x_pow / fact;
@@ -164,16 +164,20 @@ int main(void){
 		// PERF_END (PERFORMANCE_COUNTER_0_BASE, 1);
 	}
 	// post_measurement();
-//	// Floating Point
 
-
+	// Floating Point
+	float fl_result = 0.0;
+    float fl_fact = 1.0;
+	float fl_results[10];
+	float x_fl = 0.0;
 //	pre_measurement();
-//
 
-	for (int j=0; j<NUM_ITEMS; j++){
+	for (int k=0; k<NUM_ITEMS; k++){
 		// PERF_BEGIN (PERFORMANCE_COUNTER_0_BASE, 1);
 		for(int j = 0; j < 10; j++){
-			float x_fl = dataset[j];
+			x_fl = dataset[j];
+			fl_result = 0.0;
+			fl_fact = 1.0;
 			for(int i = 0; i <= order; i++){
 				if(i!=0) fl_fact *= (2.0*i)*(2.0*i+1.0);
 				fl_result += (pow(-1.0, i)) * (pow(x_fl, 2.0*i+1.0)/fl_fact);
@@ -188,14 +192,11 @@ int main(void){
 
 
 	float conv_results[10];
-	// double  time_taken = difftime(start, time(NULL));
-	// for(int i = 0; i < 10; i++){
-	// 	printf("%f: %f, %f\n", dataset[i], fl_results[i], FIXED_TO_FLOAT(results[i]));
-	// }
+	
 	float error = 0;
 	for(int j = 0; j < 10; j++){
 		conv_results[j] = FIXED_TO_FLOAT(results[j]);
-		printf("%f: %f\n", dataset[j], conv_results[j]);
+		printf("%f: Floating: %f, Fixed: %f\n", dataset[j], fl_results[j], conv_results[j]);
 		float temp_err = fl_results[j] - conv_results[j];
 		if(temp_err<0) temp_err = temp_err * -1;
 		error += temp_err;
