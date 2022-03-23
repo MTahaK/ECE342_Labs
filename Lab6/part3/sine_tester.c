@@ -122,6 +122,7 @@ int main(void){
 		// printf("%f, %d\n", dataset[i], conv_dataset[i]);
     }
 	fixed one = FLOAT_TO_FIXED(1.0);
+	fixed x = 0;
 	fixed x_pow = 0;
 	fixed x_squared = 0;
 	
@@ -156,8 +157,8 @@ int main(void){
 				}else{
 					result -= x_pow / fact;
         		}
-			results[k] = result;
 			}
+			results[i] = result;
     	}
 
 		// PERF_END (PERFORMANCE_COUNTER_0_BASE, 1);
