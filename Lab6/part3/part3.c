@@ -38,22 +38,11 @@ fixed FIXED_DIV(fixed op1, fixed op2){
     return (fixed)((op1 / op2) << Q_N); 
 }
 
-// float FLOAT_FACT(float n){
-//     if(n==0){
-//         return 1;
-//     }
-//     else{
-//         return(n * FLOAT_FACT(n-1));
-//     }
-// }
 float SINE_FL(float x, int order){
     float result = 0.0;
     float x_pow = x; 
     float fact = 1.0;
     for(int i = 0; i <= order; i++){
-        // printf("%f\n", FLOAT_FACT(2*i+1));
-        // if(i!=0) x_pow = x_pow * x * x;
-        // printf("%f\n", x_po  w);
         if(i!=0) fact *= (2*i)*(2*i+1);
         result += (pow(-1.0, i)) * (pow(x, 2*i+1)/fact);
     }
@@ -61,41 +50,31 @@ float SINE_FL(float x, int order){
 
 }
 
-float SINE_FIXED(fixed x, int order){
+fixed SINE_FIXED(fixed x, int order, int ver){
     fixed one = FLOAT_TO_FIXED(1.0); 
-    fixed fact = one;
+    int fact = 1;
     fixed x_pow = x;
     fixed x_squared = FIXED_MULT(x, x); 
-    fixed fact_term = one;
+    fixed fact_term = 1;
     
-    float result = FIXED_TO_FLOAT(FIXED_DIV(x_pow, fact));
-    printf("First: %f => %f, %f\n", FIXED_TO_FLOAT(result), FIXED_TO_FLOAT(x_pow), FIXED_TO_FLOAT(fact));
+    fixed result = x_pow / fact;
+    // if(ver) printf("\nFirst Result: %d => x/fact = %d / %d = %d\n", result, x_pow, fact, x_pow/fact);
+    if(ver) printf("\nFirst Result: %f => x/fact = %f / %f = %f\n", FIXED_TO_FLOAT(result), FIXED_TO_FLOAT(x_pow), ((float)fact), FIXED_TO_FLOAT(x_pow/fact));
 
     for(int i = 1; i <= order; i++){
-        // x_pow = FIXED_MULT( x_pow, FIXED_MULT(x, x));
-        // // x_pow = FIXED_MULT(x_pow, x); 
-        // fixed temp = FIXED_MULT(FLOAT_TO_FIXED((float) i + 1), FLOAT_TO_FIXED((float) i + 2));
-        // fact = FIXED_MULT(fact, temp);
-        // if(!fact) fact = one;
-
-        x_pow = FIXED_MULT( x_pow, FIXED_MULT(x, x));
-        fixed temp = FIXED_MULT(fact_term+one, fact_term+one+one);
-        fact = FIXED_MULT(fact, temp);
-        if(!fact) fact = one;
-        fact_term = fact_term+one+one;
-        // fact_term = fact_term+one+one;
-        // printf("%f, %f\n", FIXED_TO_FLOAT(x_pow), FIXED_TO_FLOAT(fact));
-        // printf("%f\n", FIXED_TO_FLOAT(fact));
+        x_pow = FIXED_MULT( x_pow, x_squared);
+        fact = fact * (fact_term=fact_term+1) * (fact_term=fact_term+1);
+        if(fact == 0) fact = 1;
         if( i % 2 == 0){
-            printf("pos %d, ", i);
-            result = result + FIXED_TO_FLOAT(FIXED_DIV(x_pow, fact));
-            printf("Result: %f => x: %f, fact: %f\n", FIXED_TO_FLOAT(result), FIXED_TO_FLOAT(x_pow), FIXED_TO_FLOAT(fact));
+            result += x_pow / fact;
+            // if(ver) printf("pos %d, Result: %d => x/fact = %d / %d = %d\n", i, result, x_pow, fact, x_pow/fact);
+            if(ver) printf("pos %d, Result: %f => x/fact = %f / %f = %f\n", i, FIXED_TO_FLOAT(result), FIXED_TO_FLOAT(x_pow), ((float)fact), FIXED_TO_FLOAT(x_pow/fact));
             continue;
             
         }else{
-            printf("neg %d, ", i);
-            result = result - FIXED_TO_FLOAT(FIXED_DIV(x_pow, fact));
-            printf("Result: %f => x: %f, fact: %f\n", FIXED_TO_FLOAT(result), FIXED_TO_FLOAT(x_pow), FIXED_TO_FLOAT(fact));
+            result -= x_pow / fact;
+            // if(ver) printf("neg %d, Result: %d => x/fact = %d / %d = %d\n", i, result, x_pow, fact, x_pow/fact);
+            if(ver) printf("neg %d, Result: %f => x/fact = %f / %f = %f\n", i, FIXED_TO_FLOAT(result), FIXED_TO_FLOAT(x_pow), ((float)fact), FIXED_TO_FLOAT(x_pow/fact));
             continue;
         }
         // printf("Res: %f (div: %d, %f)\n", FIXED_TO_FLOAT(result), x_pow / fact, FIXED_TO_FLOAT(x_pow / fact));
@@ -110,27 +89,44 @@ struct Q_format{
 };
 typedef struct Q_format Q_format;
 
-float dataset[10] = {0.0, M_PI, M_PI_2, M_PI/4, M_PI/6, 2*M_PI, -M_PI, -0.99999, -1, 1};
+float dataset[10] = {0.0, -M_PI, M_PI/6, M_PI/4, M_PI_2, 2*M_PI/3, M_PI, -0.99999, -1, 1};
 
 int main(){
     
-    float error = 0;
-    float temp_error = 0.0;
-    float benchmark = 0.0;
-    float computed = 0.0;
-    SET_Q_FORMAT(24, 31-24);
-    for(int i = 0; i <= 31; i++){
+    
+    
+    float min_err = FLT_MAX;
+    int min_m = 0;
+    for(int i = 1; i <= 31; i++){
         SET_Q_FORMAT(i, 31-i);
-        printf("%d, %d\n", i, 31-i);
-        float x = 3.14159265359;
-        benchmark = sinf(x);
-        // computed = SINE_FL(x,10);
-        computed = FIXED_TO_FLOAT(SINE_FIXED(FLOAT_TO_FIXED(x), 5));
-        temp_error = benchmark - computed;
-        error += abs(temp_error);
-        printf("sin(%f): %f (math.h), %f (float imp.)\n", x, benchmark, computed);
+        // printf("%d, %d\n", i, 31-i);
+        float error = 0;
+        float benchmark = 0.0;
+        float computed = 0.0;
+        for(int j = 0; j < 10; j++){
+            float x = dataset[j];
+            benchmark = sinf(x);
+            // computed = SINE_FL(x,10);
+            computed = FIXED_TO_FLOAT(SINE_FIXED(FLOAT_TO_FIXED(x), 6, 0));
+            float temp_error = benchmark - computed;
+            if(temp_error < 0) temp_error = temp_error * -1;
+            error +=temp_error;
+            if(i==23) printf("%f: %f\n", dataset[j], computed);
+            // printf("sin(%f): %f (math.h), %f (float imp.) - Error: %f\n", x, benchmark, computed, temp_error);
+        }
+        error = error /1;
+        // printf("Total Error: %f\n==========\n", error);
+        if(error < min_err){
+            min_err = error;
+            min_m = i;
+        }
+    // printf("2pi: %f, %d, %f\n", 2*M_PI, FLOAT_TO_FIXED(2*M_PI), FIXED_TO_FLOAT(FLOAT_TO_FIXED(2*M_PI)) );
+
     }
-    // error/=10;
-    printf("Error: %f\n", error);
+    SET_Q_FORMAT(16, 31-16);
+    printf("Min Error: %f, Format: (%d, %d)\n", min_err, min_m, 31-min_m);
+    // for(int i = 0; i < 10; i++){
+    //     printf("%f, %d\n", dataset[i], FLOAT_TO_FIXED(dataset[i]));
+    // }
 	return 0;
 } 
