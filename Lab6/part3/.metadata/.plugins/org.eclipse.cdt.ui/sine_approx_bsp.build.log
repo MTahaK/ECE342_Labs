@@ -1,6 +1,6 @@
-23:13:51 **** Incremental Build of configuration Nios II for project sine_approx_bsp ****
+00:21:18 **** Incremental Build of configuration Nios II for project sine_approx_bsp ****
 make all 
 [BSP build complete]
 
-23:13:51 Build Finished (took 697ms)
+00:21:18 Build Finished (took 535ms)
 
