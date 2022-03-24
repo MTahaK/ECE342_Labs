@@ -1,0 +1,9 @@
+23:13:59 **** Incremental Build of configuration Nios II for project sine_approx ****
+make all 
+Info: Building C:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C C:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp/
+[BSP build complete]
+[sine_approx build complete]
+
+23:14:00 Build Finished (took 993ms)
+

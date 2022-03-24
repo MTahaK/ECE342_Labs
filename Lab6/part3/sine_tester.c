@@ -28,16 +28,12 @@ float FIXED_TO_FLOAT(fixed f){
 	return (float)(f)/F_ONE;
 }
 
-fixed FIXED_MULT(fixed op1, fixed op2){
-
-	// calculate the result of this multiplication
-	// and return it here.
-
+static inline fixed FIXED_MULT(fixed op1, fixed op2){
 	return (op1 * op2) >> Q_N;
 
 }
 
-fixed FIXED_DIV(fixed op1, fixed op2){
+static inline fixed FIXED_DIV(fixed op1, fixed op2){
     return (fixed)((op1 / op2) << Q_N);
 }
 
@@ -85,7 +81,7 @@ struct Q_format{
 };
 typedef struct Q_format Q_format;
 
-float dataset[10] = {0.0, -M_PI, M_PI/6, M_PI/4, M_PI_2, 2*M_PI/3, M_PI, -0.99999, -1, 1};
+float dataset[10] = {0.0, -M_PI, M_PI, M_PI/6, M_PI/4, M_PI_2, -M_PI/3, 3.12345, -1, 1};
 
 
 // static alt_irq_context context; /* Use when disabling interrupts. */
@@ -112,9 +108,6 @@ float dataset[10] = {0.0, -M_PI, M_PI/6, M_PI/4, M_PI_2, 2*M_PI/3, M_PI, -0.9999
 
 int main(void){
 
-//	volatile int a = 234;
-//		volatile int result;
-
 	SET_Q_FORMAT(23, 31-23);
 	int order = 6;
 
@@ -124,8 +117,6 @@ int main(void){
     	conv_dataset[i] = FLOAT_TO_FIXED(dataset[i]);
 		// printf("%f, %d\n", dataset[i], conv_dataset[i]);
     }
-	
-	
 
 	// Fixed Point
 	fixed x = 0;

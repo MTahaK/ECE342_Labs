@@ -1,0 +1,61 @@
+=======
+Using a 6 degree Taylor Series approximation for Sine:
+Error in floating-point sine calculations: 0.000006
+Error in fixed-point sine calculations in Q23.8: 0.002439
+Cycles per data value (Fixed Point): 1267.000000
+=======
+Using a 6 degree Taylor Series approximation for Sine:
+Error in floating-point sine calculations: 0.000006
+Error in fixed-point sine calculations in Q23.8: 0.002439
+Cycles per data value (Hardware Floating Point): 116084.000000
+=======
+Using a 6 degree Taylor Series approximation for Sine:
+Error in floating-point sine calculations: 0.000006
+Error in fixed-point sine calculations in Q23.8: 0.002439
+Cycles per data value (Software Floating Point): 125602.000000
+=======
+Using a 5 degree Taylor Series approximation for Sine:
+Error in floating-point sine calculations: 0.000130
+Error in fixed-point sine calculations in Q23.8: 0.002439
+Cycles per data value (Fixed Point): 1135.000000
+=======
+Using a 5 degree Taylor Series approximation for Sine:
+Error in floating-point sine calculations: 0.000130
+Error in fixed-point sine calculations in Q23.8: 0.002439
+Cycles per data value (Hardware Floating Point): 98156.000000
+=======
+Using a 5 degree Taylor Series approximation for Sine:
+Error in floating-point sine calculations: 0.000130
+Error in fixed-point sine calculations in Q23.8: 0.002439
+Cycles per data value (Software Floating Point): 105833.000000
+=======
+Using a 4 degree Taylor Series approximation for Sine:
+Error in floating-point sine calculations: 0.002036
+Error in fixed-point sine calculations in Q23.8: 0.002439
+Cycles per data value (Fixed Point): 1006.000000
+=======
+Using a 4 degree Taylor Series approximation for Sine:
+Error in floating-point sine calculations: 0.002036
+Error in fixed-point sine calculations in Q23.8: 0.002439
+Cycles per data value (Hardware Floating Point): 77744.000000
+=======
+Using a 4 degree Taylor Series approximation for Sine:
+Error in floating-point sine calculations: 0.002036
+Error in fixed-point sine calculations in Q23.8: 0.002439
+Cycles per data value (Software Floating Point): 84339.000000
+=======
+Using a 3 degree Taylor Series approximation for Sine:
+Error in floating-point sine calculations: 0.022208
+Error in fixed-point sine calculations in Q23.8: 0.022083
+Cycles per data value (Fixed Point): 849.000000
+=======
+Using a 3 degree Taylor Series approximation for Sine:
+Error in floating-point sine calculations: 0.022208
+Error in fixed-point sine calculations in Q23.8: 0.022083
+Cycles per data value (Hardware Floating Point): 59758.000000
+=======
+Using a 3 degree Taylor Series approximation for Sine:
+Error in floating-point sine calculations: 0.022208
+Error in fixed-point sine calculations in Q23.8: 0.022083
+Cycles per data value (Software Floating Point): 64559.000000
+
