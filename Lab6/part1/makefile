@@ -9,4 +9,4 @@ part1: part1.o
 	gcc part1.o -o part1
 
 clean:
-	rm -f part1
+	rm -f part1.exe part1.o

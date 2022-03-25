@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <math.h>
 #include <float.h>
-// #include "system.h"
-// #include "altera_avalon_performance_counter.h"
-// #include <sys/alt_irq.h>
+#include "system.h"
+#include "altera_avalon_performance_counter.h"
+#include <sys/alt_irq.h>
 #include <time.h>
 
 
@@ -42,9 +42,6 @@ float SINE_FL(float x, int order){
     float x_pow = x;
     float fact = 1.0;
     for(int i = 0; i <= order; i++){
-        // printf("%f\n", FLOAT_FACT(2*i+1));
-        // if(i!=0) x_pow = x_pow * x * x;
-        // printf("%f\n", x_po  w);
         if(i!=0) fact *= (2*i)*(2*i+1);
         result += (pow(-1.0, i)) * (pow(x, 2*i+1)/fact);
     }
@@ -84,18 +81,18 @@ typedef struct Q_format Q_format;
 float dataset[10] = {0.0, -M_PI, M_PI, M_PI/6, M_PI/4, M_PI_2, -M_PI/3, 3.12345, -1, 1};
 
 
-// static alt_irq_context context; /* Use when disabling interrupts. */
+static alt_irq_context context; /* Use when disabling interrupts. */
 
-// static void pre_measurement(void){
-//   PERF_RESET (PERFORMANCE_COUNTER_0_BASE);
-//   context = alt_irq_disable_all();
-//   PERF_START_MEASURING (PERFORMANCE_COUNTER_0_BASE);
-// }
+static void pre_measurement(void){
+  PERF_RESET (PERFORMANCE_COUNTER_0_BASE);
+  context = alt_irq_disable_all();
+  PERF_START_MEASURING (PERFORMANCE_COUNTER_0_BASE);
+}
 
-// static void post_measurement(void){
-// 	alt_irq_enable_all(context);
-// 	PERF_STOP_MEASURING (PERFORMANCE_COUNTER_0_BASE);
-// }
+static void post_measurement(void){
+	alt_irq_enable_all(context);
+	PERF_STOP_MEASURING (PERFORMANCE_COUNTER_0_BASE);
+}
 
 // Un-comment these options to disable the use of the floating-point hardware
 // for the respective operation.
@@ -127,10 +124,10 @@ int main(void){
 
 	int fact_term = 1;
 	int fact = 1;
-	// pre_measurement();
+	pre_measurement();
 
 	for (int j=0; j<NUM_ITEMS; j++){
-		// PERF_BEGIN (PERFORMANCE_COUNTER_0_BASE, 1);
+		PERF_BEGIN (PERFORMANCE_COUNTER_0_BASE, 1);
 		for(int i = 0; i < 10; i++){
     		fact_term = 1;
     		fact = 1;
@@ -152,9 +149,9 @@ int main(void){
 			results[i] = result;
     	}
 
-		// PERF_END (PERFORMANCE_COUNTER_0_BASE, 1);
+		PERF_END (PERFORMANCE_COUNTER_0_BASE, 1);
 	}
-	// post_measurement();
+	post_measurement();
 
 	// Floating Point
 	float fl_result = 0.0;
@@ -196,18 +193,15 @@ int main(void){
 	printf("Error in sine calculations in Q%d.%d: %f\n", Q_M, Q_N, error);
 
 
-//	int fixed_point_time = (int)perf_get_section_time ((void*)PERFORMANCE_COUNTER_0_BASE, 1);
-	//  int floating_point_time = (int)perf_get_section_time ((void*)PERFORMANCE_COUNTER_0_BASE, 1);
 
-//	float fixed_cycles = (float)((fixed_point_time-606)/NUM_ITEMS);
-	//  float floating_cycles = (float)((floating_point_time-606)/NUM_ITEMS);
+	 int section_time = (int)perf_get_section_time ((void*)PERFORMANCE_COUNTER_0_BASE, 1);
+
+	 float cycles = (float)((section_time-606)/NUM_ITEMS);
 
 
-//	printf("Fixed Point:%f\n", fixed_cycles);
-	//  printf("Cycles: %f\n", floating_cycles);
+	 printf("Cycles: %f\n", cycles);
 
-	// while(1);
-	return 0;
+	while(1);
 }
 
 

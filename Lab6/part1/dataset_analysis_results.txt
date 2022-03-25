@@ -1,0 +1,32 @@
+Error on sample set in Q4.27: 1057.627075
+Error on sample set in Q8.23: 1263.025879
+Error on sample set in Q16.15: 0.000000
+Error on sample set in Q24.7: 0.003644
+
+============================
+Dataset 1 Min Error: 0.000000, using M=16
+============================
+Error on sample set in Q4.27: 76.953323
+Error on sample set in Q8.23: 0.000000
+Error on sample set in Q16.15: 0.000008
+Error on sample set in Q24.7: 0.005263
+
+============================
+Dataset 2 Min Error: 0.000000, using M=8
+============================
+Error on sample set in Q4.27: 0.000000
+Error on sample set in Q8.23: 0.000000
+Error on sample set in Q16.15: 0.000013
+Error on sample set in Q24.7: 0.003111
+
+============================
+Dataset 3 Min Error: 0.000000, using M=4
+============================
+Error on sample set in Q4.27: 58589.425781
+Error on sample set in Q8.23: 58829.425781
+Error on sample set in Q16.15: 76335.210938
+Error on sample set in Q24.7: 0.001367
+
+============================
+Dataset 4 Min Error: 0.001367, using M=24
+============================
