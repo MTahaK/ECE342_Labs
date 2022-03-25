@@ -1,0 +1,11 @@
+ALL RUN ON DATASET 3:
+=======
+Error in EMA calculations in Q24.7: 0.123027
+Cycles (Fixed Point): 1420.000000
+=======
+Error in EMA calculations in Q24.7: 0.123027
+Cycles (Hardware Floating Point): 583.000000
+=======
+Error in EMA calculations in Q24.7: 0.123027
+Cycles (Software Floating Point): 3914.000000
+

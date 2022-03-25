@@ -99,7 +99,7 @@ int main(){
     int min_m = 0;
     for(int i = 1; i <= 31; i++){
         SET_Q_FORMAT(i, 31-i);
-        // printf("%d, %d\n", i, 31-i);
+        printf("Q%d.%d (M = %d):\n", i, 31-i, i);
         float error = 0;
         float benchmark = 0.0;
         float computed = 0.0;
@@ -111,11 +111,11 @@ int main(){
             float temp_error = benchmark - computed;
             if(temp_error < 0) temp_error = temp_error * -1;
             error +=temp_error;
-            if(i==23) printf("%f: %f\n", dataset[j], computed);
+            // if(i==23) printf("%f: %f\n", dataset[j], computed);
             // printf("sin(%f): %f (math.h), %f (float imp.) - Error: %f\n", x, benchmark, computed, temp_error);
         }
         error = error /1;
-        // printf("Total Error: %f\n==========\n", error);
+        printf("Total Error: %f\n==========\n", error);
         if(error < min_err){
             min_err = error;
             min_m = i;
@@ -124,7 +124,7 @@ int main(){
 
     }
     SET_Q_FORMAT(16, 31-16);
-    printf("Min Error: %f, Format: (%d, %d)\n", min_err, min_m, 31-min_m);
+    printf("Min Error: %f, Format: Q%d.%d\n", min_err, min_m, 31-min_m);
     // for(int i = 0; i < 10; i++){
     //     printf("%f, %d\n", dataset[i], FLOAT_TO_FIXED(dataset[i]));
     // }

@@ -39,14 +39,13 @@ fixed FIXED_MULT(fixed op1, fixed op2)
 void EMA_FILTER(float data[10], float out[10])
 {
 	fixed alpha = FLOAT_TO_FIXED(0.1);
-	fixed prev = FLOAT_TO_FIXED(data[0]);
-	out[0] = FIXED_TO_FLOAT(prev);
+	fixed diff = FLOAT_TO_FIXED(0.9);
+	out[0] = FIXED_TO_FLOAT(FLOAT_TO_FIXED(data[0]));
 
 	for (int i = 1; i < 10; i++)
 	{
 		fixed conv = FLOAT_TO_FIXED(data[i]);
-		fixed s_i = FIXED_MULT(alpha, conv) + FIXED_MULT((1 - alpha), prev);
-		prev = conv;
+		fixed s_i = FIXED_MULT(alpha, conv) + FIXED_MULT(diff, FLOAT_TO_FIXED(out[i-1]));
 		out[i] = FIXED_TO_FLOAT(s_i);
 	}
 }
@@ -56,7 +55,7 @@ void EMA_FLOAT(float data[10], float out[10])
 	out[0] = data[0];
 	for (int i = 1; i < 10; i++)
 	{
-		out[i] = (0.1 * data[i]) + (1 - 0.1) * data[i - 1];
+		out[i] = (0.1 * data[i]) + (1 - 0.1) * out[i - 1];
 	}
 }
 // For each of these datasets, find the Qm.n representation that minimizes the error.
@@ -89,43 +88,42 @@ int main(int argc, char *argv[])
 	m24.m = 24;
 
 	Q_format formats[] = {m4, m8, m16, m24};
-	for(int i = 0; i < 4; i++){
+	// for(int i = 0; i < 4; i++){
 
-		m4.error = m8.error = m16.error = m24.error = 0.0;
-		// float *datasets[i] = datasets[i];
-		int min_m = 0;
-		float min_err = FLT_MAX;
+	// 	m4.error = m8.error = m16.error = m24.error = 0.0;
+	// 	int min_m = 0;
+	// 	float min_err = FLT_MAX;
 
-		for(int j = 0; j < 4; j++){
+	// 	for(int j = 0; j < 4; j++){
 
-			// m4.error = m8.error = m16.error = m24.error = 0.0;
-			SET_Q_FORMAT(formats[j].m, 31-formats[j].m);
-			m4.error = m8.error = m16.error = m24.error = 0.0;
-			for(int k = 0; k < 10; k++){
-				int fixed_rep = FLOAT_TO_FIXED(datasets[i][k]);
-				float reconv = FIXED_TO_FLOAT(fixed_rep);
+	// 		// m4.error = m8.error = m16.error = m24.error = 0.0;
+	// 		SET_Q_FORMAT(formats[j].m, 31-formats[j].m);
+	// 		m4.error = m8.error = m16.error = m24.error = 0.0;
+	// 		for(int k = 0; k < 10; k++){
+	// 			int fixed_rep = FLOAT_TO_FIXED(datasets[i][k]);
+	// 			float reconv = FIXED_TO_FLOAT(fixed_rep);
 				
-				// printf("M=%d: %f => %d => %f\n", formats[j].m, datasets[i][k], fixed_rep, reconv);
+	// 			// printf("M=%d: %f => %d => %f\n", formats[j].m, datasets[i][k], fixed_rep, reconv);
 				
-				float temp_err = fabs(datasets[i][k] - reconv);
-				// if(temp_err < 0) temp_err = temp_err * -1;
-				formats[j].error += temp_err;
-			}
-			formats[j].error = formats[j].error / 10;
-			if(formats[j].error < min_err){
-					min_err = formats[j].error;
-					min_m = formats[j].m;
-			}
+	// 			float temp_err = fabs(datasets[i][k] - reconv);
+	// 			// if(temp_err < 0) temp_err = temp_err * -1;
+	// 			formats[j].error += temp_err;
+	// 		}
+	// 		formats[j].error = formats[j].error / 10;
+	// 		if(formats[j].error < min_err){
+	// 			min_err = formats[j].error;
+	// 			min_m = formats[j].m;
+	// 		}
 
-			printf("Error on sample set in Q%d.%d: %f\n", Q_M, Q_N, formats[j].error);
-			formats[j].error = 0.0;
+	// 		printf("Error on sample set in Q%d.%d: %f\n", Q_M, Q_N, formats[j].error);
+	// 		formats[j].error = 0.0;
 
-		}
-		printf("\n============================\nDataset %d Min Error: %f, using M=%d\n============================\n", i+1, min_err, min_m);
-		min_m = 0;
-		min_err = FLT_MAX;
+	// 	}
+	// 	printf("\n============================\nDataset %d Min Error: %f, using M=%d\n============================\n", i+1, min_err, min_m);
+	// 	min_m = 0;
+	// 	min_err = FLT_MAX;
 
-	}
+	// }
 
 	// float op1fl = 1.0;
 	// float op2fl = 2.0;
@@ -135,77 +133,69 @@ int main(int argc, char *argv[])
 
 	// printf("\nEMA FILTER ERROR TESTING:\n");
 
-	// float emafi[10], emafl[10];
-	// m4.error = m8.error = m16.error = m24.error = 0.0;
-	// int min_m = 0;
-	// float min_err = FLT_MAX;
-	// for (int i = 0; i < 4; i++)
-	// {
+	float emafi[10], emafl[10];
+	m4.error = m8.error = m16.error = m24.error = 0.0;
+	int min_m = 0;
+	float min_err = FLT_MAX;
+	for (int i = 0; i < 4; i++)
+	{
 
-	// 	SET_Q_FORMAT(formats[i].m, 31 - formats[i].m);
-	// 	EMA_FILTER(datasets[2], emafi);
-	// 	EMA_FLOAT(datasets[2], emafl);
+		SET_Q_FORMAT(formats[i].m, 31 - formats[i].m);
+		EMA_FILTER(datasets[2], emafi);
+		EMA_FLOAT(datasets[2], emafl);
 
-	// 	if (argc == 2 && !strcmp("full", argv[1]))
-	// 	{
-	// 		printf("\n\nM = %d, Dataset: [2]\n", formats[i].m, i);
-	// 	}
-	// 	for (int j = 0; j < 10; j++)
-	// 	{
-	// 		float temp_err = emafl[j] - emafi[j];
-	// 		if (argc == 2 && !strcmp("full", argv[1]))
-	// 			printf("%f, %f, err: %f\n", emafl[j], emafi[j], temp_err);
-	// 		if (temp_err < 0)
-	// 			temp_err = temp_err * -1;
-	// 		formats[i].error += temp_err;
-	// 	}
-	// 	formats[i].error = formats[i].error / 10;
-	// 	if (formats[i].error < min_err)
-	// 	{
-	// 		min_err = formats[i].error;
-	// 		min_m = formats[i].m;
-	// 	}
+	
+		printf("M = %d, Dataset: [3]\n", formats[i].m, i);
+		
+		for (int j = 0; j < 10; j++)
+		{
+			float temp_err = fabs(emafl[j] - emafi[j]);
+			// printf("Floating: %f, Fixed: %f, err: %f\n", emafl[j], emafi[j], temp_err);
+			formats[i].error += temp_err;
+		}
+		formats[i].error = formats[i].error / 10;
+		if (formats[i].error < min_err)
+		{
+			min_err = formats[i].error;
+			min_m = formats[i].m;
+		}
 
-	// 	printf("Error in EMA calculations in Q%d.%d: %f\n", Q_M, Q_N, formats[i].error);
-	// 	formats[i].error = 0;
-	// }
+		printf("Error in EMA calculations in Q%d.%d: %f\n", Q_M, Q_N, formats[i].error);
+		formats[i].error = 0;
+	}
 
-	// printf("\n============================\nEMA on Dataset 2: Min Error: %f, using M=%d\n============================\n", min_err, min_m);
-	// m4.error = m8.error = m16.error = m24.error = 0.0;
-	// min_m = 0;
-	// min_err = FLT_MAX;
-	// for (int i = 0; i < 4; i++)
-	// {
+	printf("\n============================\nEMA on Dataset 3: Min Error: %f, using M=%d\n============================\n", min_err, min_m);
+	m4.error = m8.error = m16.error = m24.error = 0.0;
+	min_m = 0;
+	min_err = FLT_MAX;
+	for (int i = 0; i < 4; i++)
+	{
 
-	// 	SET_Q_FORMAT(formats[i].m, 31 - formats[i].m);
-	// 	EMA_FILTER(datasets[3], emafi);
-	// 	EMA_FLOAT(datasets[3], emafl);
+		SET_Q_FORMAT(formats[i].m, 31 - formats[i].m);
+		EMA_FILTER(datasets[3], emafi);
+		EMA_FLOAT(datasets[3], emafl);
 
-	// 	if (argc == 2 && !strcmp("full", argv[1]))
-	// 	{
-	// 		printf("\n\nM = %d, Dataset: [3]\n", formats[i].m, i);
-	// 	}
-	// 	for (int j = 0; j < 10; j++)
-	// 	{
-	// 		float temp_err = emafl[j] - emafi[j];
-	// 		if (argc == 2 && !strcmp("full", argv[1]))
-	// 			printf("%f, %f, err: %f\n", emafl[j], emafi[j], temp_err);
-	// 		if (temp_err < 0)
-	// 			temp_err = temp_err * -1;
-	// 		formats[i].error += temp_err;
-	// 	}
-	// 	formats[i].error = formats[i].error / 10;
-	// 	if (formats[i].error < min_err)
-	// 	{
-	// 		min_err = formats[i].error;
-	// 		min_m = formats[i].m;
-	// 	}
 
-	// 	printf("Error in EMA calculations in Q%d.%d: %f\n", Q_M, Q_N, formats[i].error);
-	// 	formats[i].error = 0;
-	// }
+		printf("M = %d, Dataset: [4]\n", formats[i].m, i);
+		
+		for (int j = 0; j < 10; j++)
+		{
+			float temp_err = fabs(emafl[j] - emafi[j]);
+			// printf("Floating: %f, Fixed: %f, err: %f\n", emafl[j], emafi[j], temp_err);
+			formats[i].error += temp_err;
+		}
+		formats[i].error = formats[i].error / 10;
+		if (formats[i].error < min_err)
+		{
+			min_err = formats[i].error;
+			min_m = formats[i].m;
+		}
 
-	// printf("\n============================\nEMA on Dataset 3: Min Error: %f, using M=%d\n============================\n", min_err, min_m);
+		printf("Error in EMA calculations in Q%d.%d: %f\n", Q_M, Q_N, formats[i].error);
+		formats[i].error = 0;
+	}
+
+	printf("\n============================\nEMA on Dataset 4: Min Error: %f, using M=%d\n============================\n", min_err, min_m);
 
 	return 0;
 }

@@ -1429,3 +1429,90 @@ Info: Building C:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part
 C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C C:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp/
 [BSP build complete]
 [sine_approx build complete]
+01:00:04 **** Incremental Build of configuration Nios II for project sine_approx ****
+make all 
+Info: Building C:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C C:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp/
+[BSP build complete]
+Info: Compiling sine_approx.c to obj/default/sine_approx.o
+nios2-elf-gcc -xc -MP -MMD -c -IC:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp//newlib/nios2-elf/include -IC:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp//HAL/inc -IC:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp/ -IC:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/sine_approx.o sine_approx.c
+sine_approx.c: In function 'main':
+sine_approx.c:149:44: error: expected expression before ')' token
+  float cycles = (float)((section_time-606)/);
+                                            ^
+make: *** [obj/default/sine_approx.o] Error 1
+01:00:06 **** Incremental Build of configuration Nios II for project sine_approx_bsp ****
+make all 
+[BSP build complete]
+01:01:02 **** Incremental Build of configuration Nios II for project sine_approx ****
+make all 
+Info: Building C:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C C:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp/
+[BSP build complete]
+Info: Compiling sine_approx.c to obj/default/sine_approx.o
+nios2-elf-gcc -xc -MP -MMD -c -IC:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp//newlib/nios2-elf/include -IC:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp//HAL/inc -IC:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp/ -IC:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/sine_approx.o sine_approx.c
+Info: Linking sine_approx.elf
+nios2-elf-g++  -T'C:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp//linker.x' -msys-crt0='C:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -LC:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp/ -LC:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp//newlib/nios2-elf/lib   -Wl,-Map=sine_approx.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o sine_approx.elf obj/default/sine_approx.o -lm -msys-lib=m
+nios2-elf-insert sine_approx.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "c:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part2_quartus_done" --sopcinfo C:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part2_quartus_done/nios_system.sopcinfo
+Info: (sine_approx.elf) 71 KBytes program size (code + initialized data).
+Info:                   177 KBytes free for stack + heap.
+Info: Creating sine_approx.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source sine_approx.elf >sine_approx.objdump
+[sine_approx build complete]
+01:01:06 **** Incremental Build of configuration Nios II for project sine_approx_bsp ****
+make all 
+[BSP build complete]
+01:01:40 **** Incremental Build of configuration Nios II for project sine_approx ****
+make all 
+Info: Building C:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C C:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp/
+[BSP build complete]
+[sine_approx build complete]
+01:02:52 **** Incremental Build of configuration Nios II for project sine_approx ****
+make all 
+Info: Building C:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C C:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp/
+[BSP build complete]
+Info: Compiling sine_approx.c to obj/default/sine_approx.o
+nios2-elf-gcc -xc -MP -MMD -c -IC:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp//newlib/nios2-elf/include -IC:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp//HAL/inc -IC:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp/ -IC:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/sine_approx.o sine_approx.c
+Info: Linking sine_approx.elf
+nios2-elf-g++  -T'C:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp//linker.x' -msys-crt0='C:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -LC:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp/ -LC:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp//newlib/nios2-elf/lib   -Wl,-Map=sine_approx.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o sine_approx.elf obj/default/sine_approx.o -lm -msys-lib=m
+nios2-elf-insert sine_approx.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "c:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part2_quartus_done" --sopcinfo C:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part2_quartus_done/nios_system.sopcinfo
+Info: (sine_approx.elf) 71 KBytes program size (code + initialized data).
+Info:                   177 KBytes free for stack + heap.
+Info: Creating sine_approx.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source sine_approx.elf >sine_approx.objdump
+[sine_approx build complete]
+01:02:54 **** Incremental Build of configuration Nios II for project sine_approx_bsp ****
+make all 
+[BSP build complete]
+01:02:55 **** Incremental Build of configuration Nios II for project sine_approx ****
+make all 
+Info: Building C:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C C:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp/
+[BSP build complete]
+[sine_approx build complete]
+01:03:22 **** Incremental Build of configuration Nios II for project sine_approx ****
+make all 
+Info: Building C:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C C:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp/
+[BSP build complete]
+Info: Compiling sine_approx.c to obj/default/sine_approx.o
+nios2-elf-gcc -xc -MP -MMD -c -IC:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp//newlib/nios2-elf/include -IC:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp//HAL/inc -IC:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp/ -IC:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o obj/default/sine_approx.o sine_approx.c
+Info: Linking sine_approx.elf
+nios2-elf-g++  -T'C:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp//linker.x' -msys-crt0='C:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -LC:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp/ -LC:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp//newlib/nios2-elf/lib   -Wl,-Map=sine_approx.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global -fno-math-errno -mcustom-fabss=224 -mcustom-fadds=253 -mcustom-fcmpeqs=227 -mcustom-fcmpges=228 -mcustom-fcmpgts=229 -mcustom-fcmples=230 -mcustom-fcmplts=231 -mcustom-fcmpnes=226 -mcustom-fdivs=255 -mcustom-fixsi=249 -mcustom-floatis=250 -mcustom-fmuls=252 -mcustom-fnegs=225 -mcustom-fsubs=254  -o sine_approx.elf obj/default/sine_approx.o -lm -msys-lib=m
+nios2-elf-insert sine_approx.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "c:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part2_quartus_done" --sopcinfo C:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part2_quartus_done/nios_system.sopcinfo
+Info: (sine_approx.elf) 75 KBytes program size (code + initialized data).
+Info:                   173 KBytes free for stack + heap.
+Info: Creating sine_approx.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source sine_approx.elf >sine_approx.objdump
+[sine_approx build complete]
+01:03:24 **** Incremental Build of configuration Nios II for project sine_approx_bsp ****
+make all 
+[BSP build complete]
+01:03:24 **** Incremental Build of configuration Nios II for project sine_approx ****
+make all 
+Info: Building C:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C C:/Users/mtaha/Desktop/Uni/Year_3_2021_2022/ECE342_Labs/Lab6/part3/software/sine_approx_bsp/
+[BSP build complete]
+[sine_approx build complete]

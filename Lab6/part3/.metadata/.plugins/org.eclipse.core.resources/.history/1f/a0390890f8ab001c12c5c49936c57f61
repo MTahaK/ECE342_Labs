@@ -49,9 +49,9 @@ float datasets[4][10] = {
     {953.719492564774, 1386.4900999229606, 413.77211455491334, 969.3928032514359, 1407.935265320118, 1151.4737485111898, 951.4091060969595, 90.01095579004799, 1544.4545295602322, 1547.6125331076184},
 
     {37.11573877282737, 110.2244276395097, 73.84148832799397, 0.7303245588438511, 59.51482116160429, 22.624547275316957, 61.86862462726829, 73.21019546083052, 79.52048412956717, 107.61291538127792},
-    
+
     {5.868417167987105, 2.269600113986436, 4.393357085048192, 0.750565860328428, 6.081457592188938, 1.1258856665435557, 4.146100992982636, 1.1676705540118277, 2.6981174753851844, 6.818996255170779},
-    
+
     {41585.23095566271, 66712.28745045475, 79416.60577202369, 39600.15691339665, 82660.66156177265, 18218.498895458128, 77669.67202852937, 129212.96467414031, 9868.191611084774, 40789.970328807554}
 };
 
@@ -71,10 +71,10 @@ static void post_measurement(void){
 
 // Un-comment these options to disable the use of the floating-point hardware
 // for the respective operation.
- #pragma GCC target("no-custom-fadds")
- #pragma GCC target("no-custom-fsubs")
- #pragma GCC target("no-custom-fmuls")
- #pragma GCC target("no-custom-fdivs")
+//  #pragma GCC target("no-custom-fadds")
+//  #pragma GCC target("no-custom-fsubs")
+//  #pragma GCC target("no-custom-fmuls")
+//  #pragma GCC target("no-custom-fdivs")
 
 #define NUM_ITEMS 100
 
@@ -89,10 +89,8 @@ int main(void){
 	for(int i = 0; i < 10; i++){
 		d2[i] = FLOAT_TO_FIXED(datasets[2][i]);
 	}
-	float emafl[10];
 	float ema1[10];
 	fixed emafi[10];
-	EMA_FLOAT(datasets[2], emafl);
 	fixed alpha = FLOAT_TO_FIXED(0.1);
 	fixed diff = FLOAT_TO_FIXED(0.9);
 
@@ -116,7 +114,7 @@ int main(void){
 	post_measurement();
 
 	// FLOATING POINT
-// 
+//
 	// pre_measurement();
 
 	for (int j=0; j<NUM_ITEMS; j++){
@@ -137,10 +135,9 @@ int main(void){
 	// double  time_taken = difftime(start, time(NULL));
 
 	float error = 0;
-	EMA_FLOAT(datasets[3], ema1);
 	for(int j = 0; j < 10; j++){
 		float temp_err = fabs(ema1[j] - FIXED_TO_FLOAT(emafi[j]));
-//		printf("Float Calc: %f, Fixed Calc: %f, err: %f\n", ema1[j], emafl[j], temp_err);
+		// printf("Float Calc: %f, Fixed Calc: %f, err: %f\n", ema1[j], FIXED_TO_FLOAT(emafi[j]), temp_err);
 		error += temp_err;
 	}
 	error = error / 10;
@@ -149,10 +146,10 @@ int main(void){
 
 	int section_time = (int)perf_get_section_time ((void*)PERFORMANCE_COUNTER_0_BASE, 1);
 
-	float cycles = (float)((section_time-606)/);
+	float cycles = (float)((section_time-606));
 
 
-	printf("Cycles per data value (Software Floating Point): %f\n", cycles);
+	printf("Cycles (Fixed Point): %f\n", cycles);
 
 	while(1);
 }
